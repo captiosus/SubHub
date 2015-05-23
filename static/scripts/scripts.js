@@ -13,4 +13,10 @@ $(document).ready(function(){
         }
       });
     }
+    $(".ingredients-list").each(function() {
+      if ($(this).height() > 20) {
+       $(this).css("overflow-y", "hidden");
+       $(this).css("height", "20px");
+      }
+    })
 });
