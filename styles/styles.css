@@ -12,16 +12,17 @@
 
 /* line 14, styles.scss */
 .container-fluid {
-  padding: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
-/* line 17, styles.scss */
+/* line 18, styles.scss */
 nav {
   font-family: Helvetica, sans-serif;
   background-color: white !important;
 }
 
-/* line 21, styles.scss */
+/* line 22, styles.scss */
 .navbar-nav {
   width: 550px;
   margin-left: auto;
@@ -30,13 +31,12 @@ nav {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 28, styles.scss */
+/* line 29, styles.scss */
 .navbar-nav li {
   display: inline-block;
   width: 100px;
   text-align: center;
   height: 30px;
-  position: relative;
 }
 /* line 34, styles.scss */
 .navbar-nav li a {
@@ -74,14 +74,13 @@ nav {
 #logo {
   height: 60px;
   width: 150px;
-  top: 0;
 }
-/* line 67, styles.scss */
+/* line 66, styles.scss */
 #logo a {
   line-height: 60px;
 }
 
-/* line 71, styles.scss */
+/* line 70, styles.scss */
 .logo {
   height: 60px;
   width: 150px;
@@ -91,31 +90,91 @@ nav {
   line-height: 60px;
 }
 
+/* line 78, styles.scss */
+.content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* line 86, styles.scss */
+.button-group {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 160px;
+}
+
+/* line 93, styles.scss */
+.explore {
+  height: 50px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid black;
+}
+/* line 100, styles.scss */
+.explore a {
+  line-height: 50px;
+  color: black;
+}
+
+/* line 105, styles.scss */
+.create {
+  height: 40px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid black;
+}
+/* line 113, styles.scss */
+.create a {
+  line-height: 40px;
+  color: black;
+}
+
+/* line 118, styles.scss */
+.page-title {
+  font-size: 20px;
+}
+
 @media screen and (max-width: 550px) {
-  /* line 80, styles.scss */
+  /* line 122, styles.scss */
   .navbar {
     height: 90px;
   }
 
-  /* line 83, styles.scss */
+  /* line 125, styles.scss */
   .navbar-nav {
     width: 100%;
   }
-  /* line 85, styles.scss */
+  /* line 127, styles.scss */
   .navbar-nav li {
     width: 25%;
   }
-  /* line 88, styles.scss */
+  /* line 130, styles.scss */
   .navbar-nav #logo {
     display: none;
   }
-  /* line 91, styles.scss */
+  /* line 133, styles.scss */
   .navbar-nav .logo {
     display: block;
   }
+
+  /* line 137, styles.scss */
+  .content {
+    padding-top: 90px;
+  }
 }
 @media screen and (min-width: 550px) {
-  /* line 97, styles.scss */
+  /* line 142, styles.scss */
   .logo {
     display: none;
   }

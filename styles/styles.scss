@@ -12,7 +12,8 @@ $background-color: white;
   transform: translateY(-50%);
 }
 .container-fluid {
-  padding: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 nav {
   font-family: $primary-font;
@@ -30,7 +31,6 @@ nav {
     width: 100px;
     text-align: center;
     height: 30px;
-    position: relative;
     a {
       color: $primary-text;
       font-size: 14px;
@@ -63,7 +63,6 @@ nav {
 #logo {
   height: 60px;
   width: 150px;
-  top: 0;
   a {
     line-height: 60px;
   }
@@ -75,6 +74,49 @@ nav {
   margin-right: auto;
   text-align: center;
   line-height: 60px;
+}
+.content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.button-group {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 160px;
+}
+.explore {
+  height: 50px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid black;
+  a {
+    line-height: 50px;
+    color: $primary-text;
+  }
+}
+.create {
+  height: 40px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid black;
+  a {
+    line-height: 40px;
+    color: $primary-text;
+  }
+}
+.page-title {
+  font-size: 20px;
 }
 @media screen and (max-width: 550px) {
   .navbar {
@@ -92,9 +134,13 @@ nav {
       display: block;
     }
   }
+  .content {
+    padding-top: 90px;
+  }
 }
 @media screen and (min-width: 550px) {
   .logo {
     display: none;
   }
 }
+
