@@ -1,8 +1,4 @@
-BLT Chipotle:Bacon, Lettuce, Tomato, Chipotle 
-BAC:Bacon, Avocado, Chipotle 
-BEC:Bacon, Egg, Cheese
-TEST:Tamale, Tomato, Eggplant, Tortillas
-LOL:Lime, Orange, Lemon
-CATS:HAPPINESS, SUNSHINE, BLAH
-DOGS:SOMETHING, LIKE, THE, ABOVE
-SANDWICH:STUFF, OF, AWESOMENESS
+BLT Chipotle::Bob::Bacon,Lettuce,Tomato,Chipotle::0
+Ice Cream Sundae::Sunni::Bananas,Ice Cream,Strawberries::17
+Hamburger::McDonald's::Buns,Meat,Lettuce,Tomato,Pickles,Cheese::100
+Tuna::Fish::Tuna::-10
