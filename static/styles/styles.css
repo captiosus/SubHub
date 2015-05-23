@@ -1,22 +1,22 @@
-/* line 6, styles.scss */
+/* line 7, styles.scss */
 .material-shadow, .nav-shadow, .sandwich {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 9, styles.scss */
+/* line 10, styles.scss */
 .vertical-align {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* line 14, styles.scss */
+/* line 15, styles.scss */
 nav {
   font-family: Helvetica, sans-serif;
   background-color: white !important;
 }
 
-/* line 18, styles.scss */
+/* line 19, styles.scss */
 .navbar-nav {
   width: 550px;
   margin-left: auto;
@@ -25,60 +25,59 @@ nav {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 25, styles.scss */
+/* line 26, styles.scss */
 .navbar-nav li {
   display: inline-block;
   width: 100px;
   text-align: center;
   height: 30px;
+  position: relative;
+  top: -25px;
 }
-/* line 30, styles.scss */
+/* line 33, styles.scss */
 .navbar-nav li a {
-  color: black;
+  color: #ff8002;
   font-size: 14px;
   padding: 0;
   line-height: 30px;
 }
-/* line 36, styles.scss */
+/* line 39, styles.scss */
 .navbar-nav li a:link {
   text-decoration: none;
 }
-/* line 39, styles.scss */
+/* line 42, styles.scss */
 .navbar-nav li a:hover {
   text-decoration: none;
 }
-/* line 42, styles.scss */
+/* line 45, styles.scss */
 .navbar-nav li a:visited {
   text-decoration: none;
 }
-/* line 45, styles.scss */
+/* line 48, styles.scss */
 .navbar-nav li a:active {
   text-decoration: none;
 }
 
-/* line 50, styles.scss */
+/* line 53, styles.scss */
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 100;
   height: 60px;
 }
-/* line 55, styles.scss */
+/* line 58, styles.scss */
 .navbar .container-fluid {
   padding: 0 !important;
 }
 
-/* line 62, styles.scss */
+/* line 65, styles.scss */
 #logo {
   height: 60px;
   width: 150px;
-}
-/* line 65, styles.scss */
-#logo a {
-  line-height: 60px;
+  top: 0;
 }
 
-/* line 69, styles.scss */
+/* line 70, styles.scss */
 .logo {
   height: 60px;
   width: 150px;
@@ -88,7 +87,15 @@ nav {
   line-height: 60px;
 }
 
-/* line 77, styles.scss */
+/* line 78, styles.scss */
+.logo-pic {
+  height: 60px;
+  width: 150px;
+  background: url("../data/logo.png") center center no-repeat;
+  background-size: cover;
+}
+
+/* line 84, styles.scss */
 .content {
   height: 100%;
   width: 100%;
@@ -98,7 +105,7 @@ nav {
   padding-right: 40px;
 }
 
-/* line 85, styles.scss */
+/* line 92, styles.scss */
 .button-group {
   width: 200px;
   height: 200px;
@@ -107,7 +114,7 @@ nav {
   margin-top: 160px;
 }
 
-/* line 92, styles.scss */
+/* line 99, styles.scss */
 .explore {
   height: 50px;
   width: 200px;
@@ -116,13 +123,13 @@ nav {
   text-align: center;
   border: 1px solid black;
 }
-/* line 99, styles.scss */
+/* line 106, styles.scss */
 .explore a {
   line-height: 50px;
   color: black;
 }
 
-/* line 104, styles.scss */
+/* line 111, styles.scss */
 .create {
   height: 40px;
   width: 150px;
@@ -132,19 +139,19 @@ nav {
   text-align: center;
   border: 1px solid black;
 }
-/* line 112, styles.scss */
+/* line 119, styles.scss */
 .create a {
   line-height: 40px;
   color: black;
 }
 
-/* line 117, styles.scss */
+/* line 124, styles.scss */
 .page-title {
   font-size: 20px;
   margin-bottom: 30px;
 }
 
-/* line 121, styles.scss */
+/* line 128, styles.scss */
 .sandwich {
   width: 280px;
   margin-left: auto;
@@ -156,28 +163,28 @@ nav {
   position: relative;
 }
 
-/* line 132, styles.scss */
+/* line 139, styles.scss */
 .sandwich-name {
   margin: 0;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-/* line 137, styles.scss */
+/* line 144, styles.scss */
 .sandwich-picture {
   border: 1px solid black;
   height: 240px;
   width: 230px;
 }
 
-/* line 142, styles.scss */
+/* line 149, styles.scss */
 .ingredients {
   margin-top: 10px;
   font-size: 14px;
   font-weight: normal;
 }
 
-/* line 147, styles.scss */
+/* line 154, styles.scss */
 .ingredients-list {
   width: 190px;
   margin-top: 10px;
@@ -185,36 +192,62 @@ nav {
   font-size: 14px;
 }
 
+/* line 160, styles.scss */
+.creator-name {
+  font-size: 14px;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+/* line 165, styles.scss */
+.more {
+  width: 80px;
+  margin-left: 150px;
+  font-size: 12px;
+  color: black;
+  cursor: pointer;
+}
+
+/* line 172, styles.scss */
+.less {
+  width: 80px;
+  margin-left: 150px;
+  font-size: 12px;
+  color: black;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 550px) {
-  /* line 154, styles.scss */
+  /* line 180, styles.scss */
   .navbar {
     height: 90px;
   }
 
-  /* line 157, styles.scss */
+  /* line 183, styles.scss */
   .navbar-nav {
     width: 100%;
   }
-  /* line 159, styles.scss */
+  /* line 185, styles.scss */
   .navbar-nav li {
     width: 25%;
+    top: -5px;
   }
-  /* line 162, styles.scss */
+  /* line 189, styles.scss */
   .navbar-nav #logo {
     display: none;
   }
-  /* line 165, styles.scss */
+  /* line 192, styles.scss */
   .navbar-nav .logo {
     display: block;
   }
 
-  /* line 169, styles.scss */
+  /* line 196, styles.scss */
   .content {
     padding-top: 90px;
   }
 }
 @media screen and (min-width: 550px) {
-  /* line 174, styles.scss */
+  /* line 201, styles.scss */
   .logo {
     display: none;
   }

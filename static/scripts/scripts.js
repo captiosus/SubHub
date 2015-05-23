@@ -13,10 +13,29 @@ $(document).ready(function(){
         }
       });
     }
-    $(".ingredients-list").each(function() {
+    $(".ingredients-list").each(function( index ) {
       if ($(this).height() > 20) {
-       $(this).css("overflow-y", "hidden");
-       $(this).css("height", "20px");
+        $(this).css("overflow-y", "hidden");
+        $(this).css("height", "20px");
+        $(this).parent().append("<p class='more'>See More...</p>");
+      }
+      else {
+        $(this).css("padding-bottom", "27px");
       }
     })
+    var expanded = false;
+    $(".more").click(function() {
+      if (expanded) {
+        $(this).parent().children(".ingredients-list").css("overflow-y", "hidden");
+        $(this).parent().children(".ingredients-list").css("height", "20px");
+        $(this).html("See More...");
+        expanded = false;
+      }
+      else {
+        $(this).parent().children(".ingredients-list").css("overflow-y", "visible");
+        $(this).parent().children(".ingredients-list").css("height", "auto");
+        $(this).html("See Less...");
+        expanded = true;
+      }
+    });
 });
