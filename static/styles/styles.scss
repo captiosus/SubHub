@@ -176,6 +176,27 @@ nav {
   color: $primary-text;
   cursor: pointer;
 }
+.sandwich-details {
+  border: 1px solid black;
+  width: 200px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sandwich-display {
+  border: 1px solid black;
+  width: 400px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ingredients-display {
+  border: 1px solid black;
+  width: 200px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (max-width: 550px) {
   .navbar {
     height: 90px;
@@ -202,4 +223,26 @@ nav {
     display: none;
   }
 }
+@media screen and (max-width: 992px) {
+  .sandwich-details {
+    position: absolute;
+    right: 0;
+  }
+  .ingredients-display {
+    position: absolute;
+    left: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sandwich-details {
+    width: 150px;
+  }
+  .sandwich-display {
+    width: 300px;
+  }
+  .ingredients-display {
+    width: 150px;
+  }
+}
+
 
