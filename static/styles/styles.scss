@@ -502,13 +502,16 @@ nav {
   @include ingredient("../data/Ingredients/swiss.png");
 }
 #turkey-display {
-  @include ingredient("../data/Ingredients/swiss.png");
+  @include ingredient("../data/Ingredients/turkey.png");
 }
 #avocado-display {
   @include ingredient("../data/Ingredients/Avocado.png");
 }
 #bacon-display {
   @include ingredient("../data/Ingredients/Bacon.png");
+}
+#chicken-display {
+  @include ingredient("../data/Ingredients/chicken.png");
 }
 #patty-display {
   @include ingredient("../data/Ingredients/Hamburger_patty.png");
@@ -616,7 +619,9 @@ nav {
 #classic-white-small {
   @include bun-top-small("../data/Ingredients/bread.png");
 }
-
+#chicken-display-small {
+  @include ingredient-small("../data/Ingredients/chicken.png");
+}
 @media screen and (min-width: 550px) {
   .logo {
     display: none;
