@@ -10,7 +10,7 @@ html {
 }
 
 /* line 16, styles.scss */
-.material-shadow, .nav-shadow, .explore, .create, .sandwich-details, .sandwich-display {
+.material-shadow, .nav-shadow, .explore, .create, .sandwich-details, .sandwich-display, .success-button {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -236,26 +236,28 @@ nav {
 
 /* line 195, styles.scss */
 .ingredients-list {
-  width: 190px;
+  width: 120px;
+  height: 150px;
+  overflow-y: auto;
   margin-top: 5px;
   margin-left: 15px;
   font-size: 14px;
   padding-left: 5px;
   list-style: none;
 }
-/* line 202, styles.scss */
+/* line 204, styles.scss */
 .ingredients-list li + li {
   margin-top: 5px;
 }
 
-/* line 206, styles.scss */
+/* line 208, styles.scss */
 .creator-name {
   font-size: 14px;
   margin-top: 0;
   font-weight: normal;
 }
 
-/* line 211, styles.scss */
+/* line 213, styles.scss */
 .more {
   width: 80px;
   margin-left: 150px;
@@ -264,7 +266,7 @@ nav {
   cursor: pointer;
 }
 
-/* line 218, styles.scss */
+/* line 220, styles.scss */
 .less {
   width: 80px;
   margin-left: 150px;
@@ -273,7 +275,7 @@ nav {
   cursor: pointer;
 }
 
-/* line 225, styles.scss */
+/* line 227, styles.scss */
 .sandwich-details {
   background-color: white;
   width: 200px;
@@ -283,7 +285,7 @@ nav {
   position: relative;
   margin-bottom: 30px;
 }
-/* line 234, styles.scss */
+/* line 236, styles.scss */
 .sandwich-details p {
   padding-top: 20px;
   font-weight: bold;
@@ -292,7 +294,7 @@ nav {
   padding-left: 15px;
   text-decoration: underline;
 }
-/* line 242, styles.scss */
+/* line 244, styles.scss */
 .sandwich-details ul {
   padding-top: 0px;
   padding-left: 0;
@@ -300,11 +302,11 @@ nav {
   height: 400px;
   overflow-y: auto;
 }
-/* line 248, styles.scss */
+/* line 250, styles.scss */
 .sandwich-details ul .choice {
   height: 50px;
 }
-/* line 250, styles.scss */
+/* line 252, styles.scss */
 .sandwich-details ul .choice p {
   text-decoration: none;
   cursor: pointer;
@@ -314,27 +316,27 @@ nav {
   line-height: 50px;
   margin-bottom: 0;
 }
-/* line 260, styles.scss */
+/* line 262, styles.scss */
 .sandwich-details ul .choice:hover {
   border-bottom: 0 !important;
   background-color: #ff9a23;
   color: white;
 }
-/* line 265, styles.scss */
+/* line 267, styles.scss */
 .sandwich-details ul .selected {
   background-color: #ff9a23;
   color: white;
 }
-/* line 270, styles.scss */
+/* line 272, styles.scss */
 .sandwich-details .subset {
   height: 30px;
   padding-left: 5px;
 }
-/* line 273, styles.scss */
+/* line 275, styles.scss */
 .sandwich-details .subset p {
   line-height: 30px;
 }
-/* line 277, styles.scss */
+/* line 279, styles.scss */
 .sandwich-details .expand-button {
   height: 30px;
   width: 30px;
@@ -348,7 +350,7 @@ nav {
   font-size: 20px;
   text-align: center;
 }
-/* line 290, styles.scss */
+/* line 292, styles.scss */
 .sandwich-details .next {
   height: 40px;
   line-height: 40px;
@@ -361,7 +363,7 @@ nav {
   right: 10px;
   border: 1px solid black;
 }
-/* line 302, styles.scss */
+/* line 304, styles.scss */
 .sandwich-details .previous {
   height: 40px;
   line-height: 40px;
@@ -374,7 +376,7 @@ nav {
   left: 10px;
   border: 1px solid black;
 }
-/* line 314, styles.scss */
+/* line 316, styles.scss */
 .sandwich-details .finish {
   height: 40px;
   line-height: 40px;
@@ -388,7 +390,7 @@ nav {
   border: 1px solid black;
 }
 
-/* line 327, styles.scss */
+/* line 329, styles.scss */
 .sandwich-display {
   background-color: white;
   width: 600px;
@@ -396,9 +398,10 @@ nav {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  padding-top: 50px;
 }
 
-/* line 336, styles.scss */
+/* line 339, styles.scss */
 .noSelect {
   position: absolute;
   bottom: 60px;
@@ -406,41 +409,41 @@ nav {
   text-decoration: none !important;
 }
 
-/* line 342, styles.scss */
+/* line 345, styles.scss */
 .noShow {
   display: none;
 }
 
 @media screen and (max-width: 550px) {
-  /* line 346, styles.scss */
+  /* line 349, styles.scss */
   .navbar {
     height: 90px;
   }
 
-  /* line 349, styles.scss */
+  /* line 352, styles.scss */
   .navbar-nav {
     width: 100%;
   }
-  /* line 351, styles.scss */
+  /* line 354, styles.scss */
   .navbar-nav li {
     width: 25%;
     top: -5px;
   }
-  /* line 355, styles.scss */
+  /* line 358, styles.scss */
   .navbar-nav #logo {
     display: none;
   }
-  /* line 358, styles.scss */
+  /* line 361, styles.scss */
   .navbar-nav .logo {
     display: block;
   }
 
-  /* line 362, styles.scss */
+  /* line 365, styles.scss */
   .content {
     padding-top: 90px;
   }
 }
-/* line 366, styles.scss */
+/* line 369, styles.scss */
 .home-screen {
   height: 720px;
   width: 1080px;
@@ -451,7 +454,7 @@ nav {
   position: absolute;
 }
 
-/* line 375, styles.scss */
+/* line 378, styles.scss */
 .home {
   width: 1080px;
   margin-left: auto;
@@ -460,14 +463,14 @@ nav {
   padding-top: 20px;
 }
 
-/* line 382, styles.scss */
+/* line 385, styles.scss */
 .home-text {
   margin-top: 50px;
   font-size: 24px;
   text-align: center;
 }
 
-/* line 387, styles.scss */
+/* line 390, styles.scss */
 #create-name {
   width: 100%;
   height: 50px;
@@ -480,7 +483,7 @@ nav {
   border-bottom: 1px solid black;
 }
 
-/* line 398, styles.scss */
+/* line 401, styles.scss */
 #create-input {
   width: 100%;
   height: 50px;
@@ -491,31 +494,105 @@ nav {
   border-bottom: 1px solid black;
 }
 
+/* line 410, styles.scss */
+.success {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* line 414, styles.scss */
+.success-links {
+  margin-top: 50px;
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 420, styles.scss */
+.success-button {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  background-color: #ff9a23;
+  text-align: center;
+  display: inline-block;
+  margin-left: 100px;
+}
+/* line 430, styles.scss */
+.success-button a {
+  color: black;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 462, styles.scss */
+#tomato-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/Tomato.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 465, styles.scss */
+#bagel-bot {
+  width: 360px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/bagelbot.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 468, styles.scss */
+#bagel-top {
+  width: 400px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/bageltop.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 471, styles.scss */
+#lettuce-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/Lettuce.png") center center no-repeat;
+  background-size: contain;
+}
+
 @media screen and (min-width: 550px) {
-  /* line 408, styles.scss */
+  /* line 475, styles.scss */
   .logo {
     display: none;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 413, styles.scss */
+  /* line 480, styles.scss */
   .sandwich-display {
     width: 100%;
   }
 
-  /* line 416, styles.scss */
+  /* line 483, styles.scss */
   .sandwich-details {
     width: 100% !important;
   }
 }
 @media screen and (max-width: 880px) {
-  /* line 421, styles.scss */
+  /* line 488, styles.scss */
   .sandwich-details {
     width: 600px;
     height: 400px;
   }
 
-  /* line 426, styles.scss */
+  /* line 493, styles.scss */
   .sandwich-contain ul {
     height: 270px;
     overflow-y: auto;

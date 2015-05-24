@@ -237,55 +237,55 @@ function next(current) {
       }
       else if(index == 1) {
         $(this).addClass("subset");
-        $(this).attr("id", "bacon");
+        $(this).attr("id", "Bacon");
         $(this).children("p").html("Bacon");
         $(this).hide();
       }
       else if(index == 2) {
         $(this).addClass("subset");
-        $(this).attr("id", "chicken");
+        $(this).attr("id", "Chicken");
         $(this).children("p").html("Chicken");
         $(this).hide();
       }
       else if(index == 3) {
         $(this).addClass("subset");
-        $(this).attr("id", "ham");
+        $(this).attr("id", "Ham");
         $(this).children("p").html("Ham");
         $(this).hide();
       }
       else if(index == 4) {
         $(this).addClass("subset");
-        $(this).attr("id", "salami");
+        $(this).attr("id", "Salami");
         $(this).children("p").html("Salami");
         $(this).hide();
       }
       else if(index == 5) {
         $(this).addClass("subset");
-        $(this).attr("id", "turkey");
+        $(this).attr("id", "Turkey");
         $(this).children("p").html("Turkey");
         $(this).hide();
       }
       else if(index == 6) {
-        $(this).attr("id", "cheese");
+        $(this).attr("id", "Cheese");
         $(this).children("p").html("Cheeses<div class='expand-button'>+</div>");
         $(this).addClass("collapse");
         $(this).show();
       }
       else if(index == 7) {
         $(this).addClass("subset");
-        $(this).attr("id", "american");
+        $(this).attr("id", "American");
         $(this).children("p").html("American");
         $(this).hide();
       }
       else if(index == 8) {
         $(this).addClass("subset");
-        $(this).attr("id", "swiss");
+        $(this).attr("id", "Swiss");
         $(this).children("p").html("Swiss");
         $(this).hide();
       }
       else if(index == 9) {
         $(this).addClass("subset");
-        $(this).attr("id", "mozzarella");
+        $(this).attr("id", "Mozzarella");
         $(this).children("p").html("Mozzarella");
         $(this).hide();
       }
@@ -297,25 +297,25 @@ function next(current) {
       }
       else if(index == 11) {
         $(this).addClass("subset");
-        $(this).attr("id", "lettuce");
+        $(this).attr("id", "Lettuce");
         $(this).children("p").html("Lettuce");
         $(this).hide();
       }
       else if(index == 12) {
         $(this).addClass("subset");
-        $(this).attr("id", "tomato");
+        $(this).attr("id", "Tomato");
         $(this).children("p").html("Tomato");
         $(this).hide();
       }
       else if(index == 13) {
         $(this).addClass("subset");
-        $(this).attr("id", "avocado");
+        $(this).attr("id", "Avocado");
         $(this).children("p").html("Avocado");
         $(this).hide();
       }
       else if(index == 14) {
         $(this).addClass("subset");
-        $(this).attr("id", "pickles");
+        $(this).attr("id", "Pickles");
         $(this).children("p").html("Pickles");
         $(this).hide();
       }
@@ -327,19 +327,19 @@ function next(current) {
       }
       else if(index == 16) {
         $(this).addClass("subset");
-        $(this).attr("id", "chipotle");
+        $(this).attr("id", "Chipotle");
         $(this).children("p").html("Chipotle");
         $(this).hide();
       }
       else if(index == 17) {
         $(this).addClass("subset");
-        $(this).attr("id", "mayo");
+        $(this).attr("id", "Mayo");
         $(this).children("p").html("Mayo");
         $(this).hide();
       }
       else if(index == 18) {
         $(this).addClass("subset");
-        $(this).attr("id", "ketchup");
+        $(this).attr("id", "Ketchup");
         $(this).children("p").html("Ketchup");
         $(this).hide();
       }
@@ -385,7 +385,7 @@ function typeOfSandwich(selection) {
     $(".create-title").html("Types of Hero Bread");
     $(".choice").each(function( index ) {
       if (index == 0) {
-        $(this).attr("id", "hero-italian");
+        $(this).attr("id", "hero-Italian");
         $(this).children("p").html("Italian");
         $(this).removeClass("subset");
         $(this).show();
@@ -393,13 +393,13 @@ function typeOfSandwich(selection) {
         $(this).removeClass("expan");
       }
       else if(index == 1) {
-        $(this).attr("id", "hero-wheat");
+        $(this).attr("id", "hero-Whole-Wheat");
         $(this).children("p").html("Whole Wheat");
         $(this).removeClass("subset");
         $(this).show();
       }
       else if(index == 2) {
-        $(this).attr("id", "hero-flatbread");
+        $(this).attr("id", "hero-Flatbread");
         $(this).children("p").html("Flatbread");
         $(this).removeClass("subset");
         $(this).show();
@@ -424,7 +424,7 @@ function typeOfSandwich(selection) {
     $(".create-title").html("Types of Classic Sandwich Bread");
     $(".choice").each(function( index ) {
       if (index == 0) {
-        $(this).attr("id", "classic-whole-wheat");
+        $(this).attr("id", "classic-Whole-Wheat");
         $(this).children("p").html("Whole Wheat");
         $(this).removeClass("subset");
         $(this).show();
@@ -432,13 +432,13 @@ function typeOfSandwich(selection) {
         $(this).removeClass("expan");
       }
       else if(index == 1) {
-        $(this).attr("id", "classic-white");
+        $(this).attr("id", "classic-White");
         $(this).children("p").html("White Bread");
         $(this).removeClass("subset");
         $(this).show();
       }
       else if(index == 2) {
-        $(this).attr("id", "classic-rye");
+        $(this).attr("id", "classic-Rye");
         $(this).children("p").html("Rye Bread");
         $(this).removeClass("subset");
         $(this).show();
@@ -453,7 +453,7 @@ function typeOfSandwich(selection) {
     $(".create-title").html("Types of Burger Bread");
     $(".choice").each(function( index ) {
       if (index == 0) {
-        $(this).attr("id", "burger-plain");
+        $(this).attr("id", "burger-Plain");
         $(this).children("p").html("Plain");
         $(this).removeClass("subset");
         $(this).show();
@@ -461,13 +461,13 @@ function typeOfSandwich(selection) {
         $(this).removeClass("expan");
       }
       else if(index == 1) {
-        $(this).attr("id", "burger-sesame");
+        $(this).attr("id", "burger-Sesame");
         $(this).children("p").html("Sesame");
         $(this).removeClass("subset");
         $(this).show();
       }
       else if(index == 2) {
-        $(this).attr("id", "burger-wheat");
+        $(this).attr("id", "burger-Wheat");
         $(this).children("p").html("Whole Wheat");
         $(this).removeClass("subset");
         $(this).show();
@@ -482,7 +482,7 @@ function typeOfSandwich(selection) {
     $(".create-title").html("Types of Bagel Bread");
     $(".choice").each(function( index ) {
       if (index == 0) {
-        $(this).attr("id", "bagel-plain");
+        $(this).attr("id", "bagel-Plain");
         $(this).children("p").html("Plain");
         $(this).removeClass("subset");
         $(this).show();
@@ -490,13 +490,13 @@ function typeOfSandwich(selection) {
         $(this).removeClass("expan");
       }
       else if(index == 1) {
-        $(this).attr("id", "bagel-sesame");
+        $(this).attr("id", "bagel-Sesame");
         $(this).children("p").html("Sesame");
         $(this).removeClass("subset");
         $(this).show();
       }
       else if(index == 2) {
-        $(this).attr("id", "bagel-everything");
+        $(this).attr("id", "bagel-Everything");
         $(this).children("p").html("Everything");
         $(this).removeClass("subset");
         $(this).show();
