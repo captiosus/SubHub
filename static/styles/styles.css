@@ -1,27 +1,33 @@
-/* line 8, styles.scss */
+/* line 9, styles.scss */
 body {
-  background-color: white;
+  background-color: #fff8e7;
+  height: 100%;
 }
 
-/* line 11, styles.scss */
+/* line 13, styles.scss */
+html {
+  height: 100%;
+}
+
+/* line 16, styles.scss */
 .material-shadow, .nav-shadow, .sandwich-details, .sandwich-display {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 14, styles.scss */
+/* line 19, styles.scss */
 .vertical-align {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* line 19, styles.scss */
+/* line 24, styles.scss */
 nav {
   font-family: Helvetica, sans-serif;
-  background-color: white !important;
+  background-color: #fff8e7 !important;
 }
 
-/* line 23, styles.scss */
+/* line 28, styles.scss */
 .navbar-nav {
   width: 550px;
   margin-left: auto;
@@ -30,7 +36,7 @@ nav {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 30, styles.scss */
+/* line 35, styles.scss */
 .navbar-nav li {
   display: inline-block;
   width: 100px;
@@ -39,50 +45,50 @@ nav {
   position: relative;
   top: -25px;
 }
-/* line 37, styles.scss */
+/* line 42, styles.scss */
 .navbar-nav li a {
   color: #ff8002;
   font-size: 14px;
   padding: 0;
   line-height: 30px;
 }
-/* line 43, styles.scss */
+/* line 48, styles.scss */
 .navbar-nav li a:link {
   text-decoration: none;
 }
-/* line 46, styles.scss */
+/* line 51, styles.scss */
 .navbar-nav li a:hover {
   text-decoration: none;
 }
-/* line 49, styles.scss */
+/* line 54, styles.scss */
 .navbar-nav li a:visited {
   text-decoration: none;
 }
-/* line 52, styles.scss */
+/* line 57, styles.scss */
 .navbar-nav li a:active {
   text-decoration: none;
 }
 
-/* line 57, styles.scss */
+/* line 62, styles.scss */
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 100;
   height: 60px;
 }
-/* line 62, styles.scss */
+/* line 67, styles.scss */
 .navbar .container-fluid {
   padding: 0 !important;
 }
 
-/* line 69, styles.scss */
+/* line 74, styles.scss */
 #logo {
   height: 60px;
   width: 150px;
   top: 0;
 }
 
-/* line 74, styles.scss */
+/* line 79, styles.scss */
 .logo {
   height: 60px;
   width: 150px;
@@ -92,7 +98,7 @@ nav {
   line-height: 60px;
 }
 
-/* line 82, styles.scss */
+/* line 87, styles.scss */
 .logo-pic {
   height: 60px;
   width: 150px;
@@ -100,7 +106,7 @@ nav {
   background-size: cover;
 }
 
-/* line 88, styles.scss */
+/* line 93, styles.scss */
 .content {
   height: 100%;
   width: 100%;
@@ -110,16 +116,16 @@ nav {
   padding-right: 40px;
 }
 
-/* line 96, styles.scss */
+/* line 101, styles.scss */
 .button-group {
   width: 200px;
   height: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 160px;
+  margin-top: 260px;
 }
 
-/* line 103, styles.scss */
+/* line 108, styles.scss */
 .explore {
   height: 50px;
   width: 200px;
@@ -128,13 +134,13 @@ nav {
   text-align: center;
   border: 1px solid black;
 }
-/* line 110, styles.scss */
+/* line 115, styles.scss */
 .explore a {
   line-height: 50px;
   color: black;
 }
 
-/* line 115, styles.scss */
+/* line 120, styles.scss */
 .create {
   height: 40px;
   width: 150px;
@@ -144,19 +150,19 @@ nav {
   text-align: center;
   border: 1px solid black;
 }
-/* line 123, styles.scss */
+/* line 128, styles.scss */
 .create a {
   line-height: 40px;
   color: black;
 }
 
-/* line 128, styles.scss */
+/* line 133, styles.scss */
 .page-title {
   font-size: 20px;
   margin-bottom: 30px;
 }
 
-/* line 132, styles.scss */
+/* line 137, styles.scss */
 .sandwich {
   width: 310px;
   height: 650px;
@@ -169,7 +175,7 @@ nav {
   margin-bottom: 20px;
 }
 
-/* line 143, styles.scss */
+/* line 148, styles.scss */
 .sandwich-name {
   margin: 0;
   font-size: 16px;
@@ -177,14 +183,14 @@ nav {
   margin-top: 10px;
 }
 
-/* line 149, styles.scss */
+/* line 154, styles.scss */
 .sandwich-picture {
   height: 272px;
   width: 273px;
   margin-left: 19px;
 }
 
-/* line 154, styles.scss */
+/* line 159, styles.scss */
 .sandwich-receipt {
   padding-left: 10px;
   height: 303px;
@@ -193,14 +199,14 @@ nav {
   margin-top: 15px;
 }
 
-/* line 161, styles.scss */
+/* line 166, styles.scss */
 .ingredients {
   margin-top: 10px;
   font-size: 14px;
   font-weight: normal;
 }
 
-/* line 166, styles.scss */
+/* line 171, styles.scss */
 .rating {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -208,7 +214,7 @@ nav {
   font-weight: normal;
 }
 
-/* line 172, styles.scss */
+/* line 177, styles.scss */
 .receipt-title {
   margin-top: 10px;
   margin-left: -10px;
@@ -218,14 +224,14 @@ nav {
   text-align: center;
 }
 
-/* line 180, styles.scss */
+/* line 185, styles.scss */
 .server-name {
   margin-top: 10px;
   font-size: 14px;
   font-weight: normal;
 }
 
-/* line 185, styles.scss */
+/* line 190, styles.scss */
 .ingredients-list {
   width: 190px;
   margin-top: 5px;
@@ -234,19 +240,19 @@ nav {
   padding-left: 5px;
   list-style: none;
 }
-/* line 192, styles.scss */
+/* line 197, styles.scss */
 .ingredients-list li + li {
   margin-top: 5px;
 }
 
-/* line 196, styles.scss */
+/* line 201, styles.scss */
 .creator-name {
   font-size: 14px;
   margin-top: 0;
   font-weight: normal;
 }
 
-/* line 201, styles.scss */
+/* line 206, styles.scss */
 .more {
   width: 80px;
   margin-left: 150px;
@@ -255,7 +261,7 @@ nav {
   cursor: pointer;
 }
 
-/* line 208, styles.scss */
+/* line 213, styles.scss */
 .less {
   width: 80px;
   margin-left: 150px;
@@ -264,7 +270,7 @@ nav {
   cursor: pointer;
 }
 
-/* line 215, styles.scss */
+/* line 220, styles.scss */
 .sandwich-details {
   background-color: white;
   width: 200px;
@@ -274,7 +280,7 @@ nav {
   position: relative;
   margin-bottom: 30px;
 }
-/* line 224, styles.scss */
+/* line 229, styles.scss */
 .sandwich-details p {
   padding-top: 20px;
   font-weight: bold;
@@ -283,17 +289,19 @@ nav {
   padding-left: 15px;
   text-decoration: underline;
 }
-/* line 232, styles.scss */
+/* line 237, styles.scss */
 .sandwich-details ul {
-  padding-top: 20px;
+  padding-top: 0px;
   padding-left: 0;
   list-style: none;
+  height: 400px;
+  overflow-y: auto;
 }
-/* line 236, styles.scss */
+/* line 243, styles.scss */
 .sandwich-details ul li {
   height: 50px;
 }
-/* line 238, styles.scss */
+/* line 245, styles.scss */
 .sandwich-details ul li p {
   text-decoration: none;
   cursor: pointer;
@@ -303,32 +311,41 @@ nav {
   line-height: 50px;
   margin-bottom: 0;
 }
-/* line 248, styles.scss */
+/* line 255, styles.scss */
 .sandwich-details ul li:hover {
   border-bottom: 0 !important;
   background-color: #ff9a23;
   color: white;
 }
-/* line 253, styles.scss */
+/* line 260, styles.scss */
 .sandwich-details ul .selected {
   background-color: #ff9a23;
   color: white;
 }
-/* line 258, styles.scss */
+/* line 265, styles.scss */
 .sandwich-details .subset {
   height: 30px;
   padding-left: 5px;
 }
-/* line 261, styles.scss */
+/* line 268, styles.scss */
 .sandwich-details .subset p {
   line-height: 30px;
 }
-/* line 265, styles.scss */
+/* line 272, styles.scss */
 .sandwich-details .expand-button {
   height: 30px;
   width: 30px;
+  display: inline;
+  position: relative;
+  float: right;
+  border: 1px solid black;
+  line-height: 28px;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  text-align: center;
 }
-/* line 269, styles.scss */
+/* line 285, styles.scss */
 .sandwich-details .next {
   height: 40px;
   line-height: 40px;
@@ -341,7 +358,7 @@ nav {
   right: 10px;
   border: 1px solid black;
 }
-/* line 281, styles.scss */
+/* line 297, styles.scss */
 .sandwich-details .previous {
   height: 40px;
   line-height: 40px;
@@ -355,7 +372,7 @@ nav {
   border: 1px solid black;
 }
 
-/* line 294, styles.scss */
+/* line 310, styles.scss */
 .sandwich-display {
   background-color: white;
   width: 600px;
@@ -365,7 +382,7 @@ nav {
   margin-bottom: 30px;
 }
 
-/* line 303, styles.scss */
+/* line 319, styles.scss */
 .noSelect {
   position: absolute;
   bottom: 60px;
@@ -373,67 +390,81 @@ nav {
   text-decoration: none !important;
 }
 
-/* line 309, styles.scss */
+/* line 325, styles.scss */
 .noShow {
   display: none;
 }
 
 @media screen and (max-width: 550px) {
-  /* line 313, styles.scss */
+  /* line 329, styles.scss */
   .navbar {
     height: 90px;
   }
 
-  /* line 316, styles.scss */
+  /* line 332, styles.scss */
   .navbar-nav {
     width: 100%;
   }
-  /* line 318, styles.scss */
+  /* line 334, styles.scss */
   .navbar-nav li {
     width: 25%;
     top: -5px;
   }
-  /* line 322, styles.scss */
+  /* line 338, styles.scss */
   .navbar-nav #logo {
     display: none;
   }
-  /* line 325, styles.scss */
+  /* line 341, styles.scss */
   .navbar-nav .logo {
     display: block;
   }
 
-  /* line 329, styles.scss */
+  /* line 345, styles.scss */
   .content {
     padding-top: 90px;
   }
 }
-/* line 333, styles.scss */
+/* line 349, styles.scss */
 .home-screen {
-  height: 100%;
-  background: url(../data/);
+  height: 720px;
+  background: url(../data/background.png) center center no-repeat;
+  background-size: cover;
+}
+
+/* line 354, styles.scss */
+.home-text {
+  margin-top: 50px;
+  font-size: 24px;
+  text-align: center;
 }
 
 @media screen and (min-width: 550px) {
-  /* line 338, styles.scss */
+  /* line 360, styles.scss */
   .logo {
     display: none;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 343, styles.scss */
+  /* line 365, styles.scss */
   .sandwich-display {
     width: 100%;
   }
 
-  /* line 346, styles.scss */
+  /* line 368, styles.scss */
   .sandwich-details {
     width: 100% !important;
   }
 }
 @media screen and (max-width: 880px) {
-  /* line 351, styles.scss */
+  /* line 373, styles.scss */
   .sandwich-details {
     width: 600px;
     height: 400px;
+  }
+
+  /* line 378, styles.scss */
+  .sandwich-contain ul {
+    height: 270px;
+    overflow-y: auto;
   }
 }
