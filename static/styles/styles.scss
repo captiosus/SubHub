@@ -443,6 +443,30 @@ nav {
   background: url($type) center center no-repeat;
   background-size: contain;
 }
+@mixin bun-top-small($type) {
+  width: 400px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url($type) center center no-repeat;
+  background-size: contain;
+}
+@mixin bun-bot-small($type) {
+  width: 360px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url($type) center center no-repeat;
+  background-size: contain;
+}
+@mixin ingredient-small($type) {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url($type) center center no-repeat;
+  background-size: contain;
+}
 @mixin bun-top($type) {
   width: 400px;
   height: 100px;
@@ -503,6 +527,86 @@ nav {
 }
 #bacon-display {
   @include ingredient("../data/Ingredients/Bacon.png");
+}
+#patty-display {
+  @include ingredient("../data/Ingredients/Hamburger_patty.png");
+}
+#hero-italian {
+  @include bun-top("../data/Ingredients/herotop.png");
+}
+#hero-italian-bot {
+  @include bun-top("../data/Ingredients/herobot.png");
+}
+#burger-sesame {
+  @include bun-top("../data/Ingredients/burgertop.png");
+}
+#burger-bot {
+  @include bun-bot("../data/Ingredients/burgerbot.png");
+}
+#classic-white {
+  @include bun-top("../data/Ingredients/bread.png");
+}
+
+@mixin bun-top($type) {
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url($type) center center no-repeat;
+  background-size: contain;
+}
+@mixin bun-bot($type) {
+  width: 180px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url($type) center center no-repeat;
+  background-size: contain;
+}
+#tomato-display-small {
+  @include ingredient-small("../data/Ingredients/Tomato.png");
+}
+#bagel-bot-small {
+  @include bun-bot-small("../data/Ingredients/bagelbot.png");
+}
+#bagel-top-small {
+  @include bun-top-small("../data/Ingredients/bageltop.png");
+}
+#lettuce-display-small {
+  @include ingredient-small("../data/Ingredients/Lettuce.png");
+}
+#american-display-small {
+  @include ingredient-small("../data/Ingredients/american.png");
+}
+#cheddar-display-small {
+  @include ingredient-small("../data/Ingredients/cheddar.png");
+}
+#ham-display-small {
+  @include ingredient-small("../data/Ingredients/hamside.png");
+}
+#chipotle-display-small {
+  @include ingredient-small("../data/Ingredients/chipotle.png");
+}
+#ketchup-display-small {
+  @include ingredient-small("../data/Ingredients/ketchup.png");
+}
+#mayo-display-small {
+  @include ingredient-small("../data/Ingredients/mayo.png");
+}
+#mustard-display-small {
+  @include ingredient-small("../data/Ingredients/mustard.png");
+}
+#swiss-display-small {
+  @include ingredient-small("../data/Ingredients/swiss.png");
+}
+#turkey-display-small {
+  @include ingredient-small("../data/Ingredients/swiss.png");
+}
+#avocado-display-small {
+  @include ingredient-small("../data/Ingredients/Avocado.png");
+}
+#bacon-display-small {
+  @include ingredient-small("../data/Ingredients/Bacon.png");
 }
 #patty-display {
   @include ingredient("../data/Ingredients/Hamburger_patty.png");
