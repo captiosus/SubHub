@@ -1,22 +1,22 @@
-/* line 7, styles.scss */
-.material-shadow, .nav-shadow, .sandwich {
+/* line 8, styles.scss */
+.material-shadow, .nav-shadow, .sandwich, .sandwich-details, .sandwich-display {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 10, styles.scss */
+/* line 11, styles.scss */
 .vertical-align {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* line 15, styles.scss */
+/* line 16, styles.scss */
 nav {
   font-family: Helvetica, sans-serif;
   background-color: white !important;
 }
 
-/* line 19, styles.scss */
+/* line 20, styles.scss */
 .navbar-nav {
   width: 550px;
   margin-left: auto;
@@ -25,7 +25,7 @@ nav {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 26, styles.scss */
+/* line 27, styles.scss */
 .navbar-nav li {
   display: inline-block;
   width: 100px;
@@ -34,50 +34,50 @@ nav {
   position: relative;
   top: -25px;
 }
-/* line 33, styles.scss */
+/* line 34, styles.scss */
 .navbar-nav li a {
   color: #ff8002;
   font-size: 14px;
   padding: 0;
   line-height: 30px;
 }
-/* line 39, styles.scss */
+/* line 40, styles.scss */
 .navbar-nav li a:link {
   text-decoration: none;
 }
-/* line 42, styles.scss */
+/* line 43, styles.scss */
 .navbar-nav li a:hover {
   text-decoration: none;
 }
-/* line 45, styles.scss */
+/* line 46, styles.scss */
 .navbar-nav li a:visited {
   text-decoration: none;
 }
-/* line 48, styles.scss */
+/* line 49, styles.scss */
 .navbar-nav li a:active {
   text-decoration: none;
 }
 
-/* line 53, styles.scss */
+/* line 54, styles.scss */
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 100;
   height: 60px;
 }
-/* line 58, styles.scss */
+/* line 59, styles.scss */
 .navbar .container-fluid {
   padding: 0 !important;
 }
 
-/* line 65, styles.scss */
+/* line 66, styles.scss */
 #logo {
   height: 60px;
   width: 150px;
   top: 0;
 }
 
-/* line 70, styles.scss */
+/* line 71, styles.scss */
 .logo {
   height: 60px;
   width: 150px;
@@ -87,7 +87,7 @@ nav {
   line-height: 60px;
 }
 
-/* line 78, styles.scss */
+/* line 79, styles.scss */
 .logo-pic {
   height: 60px;
   width: 150px;
@@ -95,7 +95,7 @@ nav {
   background-size: cover;
 }
 
-/* line 84, styles.scss */
+/* line 85, styles.scss */
 .content {
   height: 100%;
   width: 100%;
@@ -105,7 +105,7 @@ nav {
   padding-right: 40px;
 }
 
-/* line 92, styles.scss */
+/* line 93, styles.scss */
 .button-group {
   width: 200px;
   height: 200px;
@@ -114,7 +114,7 @@ nav {
   margin-top: 160px;
 }
 
-/* line 99, styles.scss */
+/* line 100, styles.scss */
 .explore {
   height: 50px;
   width: 200px;
@@ -123,13 +123,13 @@ nav {
   text-align: center;
   border: 1px solid black;
 }
-/* line 106, styles.scss */
+/* line 107, styles.scss */
 .explore a {
   line-height: 50px;
   color: black;
 }
 
-/* line 111, styles.scss */
+/* line 112, styles.scss */
 .create {
   height: 40px;
   width: 150px;
@@ -139,19 +139,19 @@ nav {
   text-align: center;
   border: 1px solid black;
 }
-/* line 119, styles.scss */
+/* line 120, styles.scss */
 .create a {
   line-height: 40px;
   color: black;
 }
 
-/* line 124, styles.scss */
+/* line 125, styles.scss */
 .page-title {
   font-size: 20px;
   margin-bottom: 30px;
 }
 
-/* line 128, styles.scss */
+/* line 129, styles.scss */
 .sandwich {
   width: 280px;
   margin-left: auto;
@@ -163,28 +163,28 @@ nav {
   position: relative;
 }
 
-/* line 139, styles.scss */
+/* line 140, styles.scss */
 .sandwich-name {
   margin: 0;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-/* line 144, styles.scss */
+/* line 145, styles.scss */
 .sandwich-picture {
   border: 1px solid black;
   height: 240px;
   width: 230px;
 }
 
-/* line 149, styles.scss */
+/* line 150, styles.scss */
 .ingredients {
   margin-top: 10px;
   font-size: 14px;
   font-weight: normal;
 }
 
-/* line 154, styles.scss */
+/* line 155, styles.scss */
 .ingredients-list {
   width: 190px;
   margin-top: 10px;
@@ -192,14 +192,14 @@ nav {
   font-size: 14px;
 }
 
-/* line 160, styles.scss */
+/* line 161, styles.scss */
 .creator-name {
   font-size: 14px;
   margin-top: 0;
   font-weight: normal;
 }
 
-/* line 165, styles.scss */
+/* line 166, styles.scss */
 .more {
   width: 80px;
   margin-left: 150px;
@@ -208,7 +208,7 @@ nav {
   cursor: pointer;
 }
 
-/* line 172, styles.scss */
+/* line 173, styles.scss */
 .less {
   width: 80px;
   margin-left: 150px;
@@ -217,54 +217,128 @@ nav {
   cursor: pointer;
 }
 
-/* line 179, styles.scss */
+/* line 180, styles.scss */
 .sandwich-details {
-  border: 1px solid black;
   width: 200px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+/* line 187, styles.scss */
+.sandwich-details p {
+  padding-top: 20px;
+  font-weight: bold;
+  border: 0;
+  cursor: default;
+  padding-left: 15px;
+  text-decoration: underline;
+}
+/* line 195, styles.scss */
+.sandwich-details ul {
+  padding-top: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+/* line 199, styles.scss */
+.sandwich-details ul li {
+  border-top: 1px solid black;
+  height: 50px;
+}
+/* line 202, styles.scss */
+.sandwich-details ul li p {
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 0;
+  font-weight: normal;
+  padding-left: 25px;
+  line-height: 50px;
+  margin-bottom: 0;
+}
+/* line 212, styles.scss */
+.sandwich-details ul li:last-child {
+  border-bottom: 1px solid black;
+}
+/* line 215, styles.scss */
+.sandwich-details ul li:hover {
+  background-color: #ff8002;
+  color: white;
+  border-top: 1px solid #ff8002;
+}
+/* line 220, styles.scss */
+.sandwich-details ul li:hover + li {
+  border-top: 0;
+}
+/* line 224, styles.scss */
+.sandwich-details .next {
+  height: 40px;
+  line-height: 40px;
+  width: 80px;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  border: 1px solid black;
+}
+
+/* line 236, styles.scss */
+.sandwich-display {
+  width: 600px;
   height: 550px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 186, styles.scss */
-.sandwich-display {
-  border: 1px solid black;
-  width: 600px;
-  height: 550px;
-}
-
 @media screen and (max-width: 550px) {
-  /* line 192, styles.scss */
+  /* line 244, styles.scss */
   .navbar {
     height: 90px;
   }
 
-  /* line 195, styles.scss */
+  /* line 247, styles.scss */
   .navbar-nav {
     width: 100%;
   }
-  /* line 197, styles.scss */
+  /* line 249, styles.scss */
   .navbar-nav li {
     width: 25%;
     top: -5px;
   }
-  /* line 201, styles.scss */
+  /* line 253, styles.scss */
   .navbar-nav #logo {
     display: none;
   }
-  /* line 204, styles.scss */
+  /* line 256, styles.scss */
   .navbar-nav .logo {
     display: block;
   }
 
-  /* line 208, styles.scss */
+  /* line 260, styles.scss */
   .content {
     padding-top: 90px;
   }
 }
 @media screen and (min-width: 550px) {
-  /* line 213, styles.scss */
+  /* line 265, styles.scss */
   .logo {
     display: none;
+  }
+}
+@media screen and (max-width: 660px) {
+  /* line 270, styles.scss */
+  .sandwich-display {
+    width: 100%;
+  }
+
+  /* line 273, styles.scss */
+  .sandwich-details {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 880px) {
+  /* line 278, styles.scss */
+  .sandwich-details {
+    width: 600px;
   }
 }
