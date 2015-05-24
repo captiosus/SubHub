@@ -193,7 +193,9 @@ nav {
   font-weight: normal;
 }
 .ingredients-list {
-  width: 190px;
+  width: 120px;
+  height: 150px;
+  overflow-y: auto;
   margin-top: 5px;
   margin-left: 15px;
   font-size: 14px;
@@ -332,6 +334,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  padding-top: 50px;
 }
 .noSelect {
   position: absolute;
@@ -431,6 +434,42 @@ nav {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+@mixin ingredient($type) {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url($type) center center no-repeat;
+  background-size: contain;
+}
+@mixin bun-top($type) {
+  width: 400px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url($type) center center no-repeat;
+  background-size: contain;
+}
+@mixin bun-bot($type) {
+  width: 360px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url($type) center center no-repeat;
+  background-size: contain;
+}
+#tomato-display {
+  @include ingredient("../data/Ingredients/Tomato.png");
+}
+#bagel-bot {
+  @include bun-bot("../data/Ingredients/bagelbot.png");
+}
+#bagel-top {
+  @include bun-top("../data/Ingredients/bageltop.png");
+}
+#lettuce-display {
+  @include ingredient("../data/Ingredients/Lettuce.png");
 }
 @media screen and (min-width: 550px) {
   .logo {
