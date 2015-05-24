@@ -43,77 +43,191 @@ $(document).ready(function(){
     var select = false;
     var selection;
     $(".next").click(function() {
-      if (current == 0) {
-        $(".choice").each(function() {
-          if ($(this).hasClass("selected")) {
-            select = true;
-            selection = $(this).attr("id");
+      $(".noSelect").remove();
+      $(".choice").each(function() {
+        if (current == 0) {
+          $(".choice").each(function() {
+            if ($(this).hasClass("selected")) {
+              select = true;
+              selection = $(this).attr("id");
+            }
+          });
+        }
+        else {
+          $(".choice").each(function() {
+            if ($(this).hasClass("selected")) {
+              select = true;
+            }
+          });
+        }
+        if (select && current == 0) {
+          if (selection == "roll") {
+            current+=2;
+            next(current);
           }
-        });
-      }
-      else if (current == 1) {
-        $(".choice").each(function() {
-          if ($(this).hasClass("selected")) {
-            select = true;
+          else {
+            typeOfSandwich(selection);
+            current++;
+            select = false;
           }
-        });
-      }
-      if (select && current == 0) {
-        typeOfSandwich(selection);
-        current++;
-        select = false;
-      }
-      if (select) {
-        current++;
-        next(current);
-      }
-      else {
-        $(this).parent().append("<p class='noSelect'>Please make a selection.</p>");
-      }
+          return false;
+        }
+        else if (select) {
+          current++;
+          next(current);
+          select = false;
+          return false;
+        }
+        else {
+          $(this).parent().append("<p class='noSelect'>Please make a selection.</p>");
+        }
+      });
     });
     $(".previous").click(function() {
-      console.log("hello");
+      $(".noSelect").remove();
       current--;
       next(current);
     });
     $(".choice").click(function() {
-      $(".choice").each(function() {
+      if ($(this).hasClass("selected")) {
         $(this).removeClass("selected");
-      });
-      $(this).addClass("selected");
+      }
+      else {
+        $(".choice").each(function() {
+          $(this).removeClass("selected");
+        });
+        $(this).addClass("selected");
+      }
     });
 });
-var page0 = '<p>Type of Sandwich</p><ul><li class="choice" id="hero"><p>Hero</p></li><li class="choice" id="classic"><p>Classic Sandwich</p></li><li class="choice" id="burger"><p>Hamburger</p></li><li class="choice" id="bagel"><p>Bagel</p></li><li class="choice" id="roll"><p>Roll</p></li></ul><div class="next"> Next Step </div>';
-var hero = '<p>Types of Hero Bread</p><ul><li class="choice" id="hero-italian"><p>Italian</p></li><li class="choice" id="hero-wheat"><p>Wheat</p></li><li class="choice" id="hero-flatbread"><p>Flatbread</p></li></ul><div class="previous"> Previous</div><div class="next"> Next </div>'
-
 function next(current) {
+  $(".choice").each(function() {
+    $(this).removeClass("selected");
+  });
   if (current == 0) {
-    $(".sandwich-details").empty().html(page0);
+    $(".choice").each(function( index ) {
+      if (index == 0) {
+        $(this).attr("id", "hero");
+        $(this).children("p").html("Hero");
+      }
+      else if(index == 1) {
+        $(this).attr("id", "classic");
+        $(this).children("p").html("Classic Sandwich");
+      }
+      else if(index == 2) {
+        $(this).attr("id", "burger");
+        $(this).children("p").html("Hamburger");
+      }
+      else if(index == 3) {
+        $(this).attr("id", "bagel");
+        $(this).children("p").html("Bagel");
+        $(this).css("display", "block");
+      }
+      else if(index == 4) {
+        $(this).attr("id", "roll");
+        $(this).children("p").html("Roll");
+        $(this).css("display", "block");
+      }
+    });
   }
   else if (current == 2) {
-    $(".sandwich-details").empty().html(page2);
   }
   else if (current == 3) {
-    $(".sandwich-details").empty().html(page3);
   }
   else if (current == 4) {
-    $(".sandwich-details").empty().html(page4);
   }
 }
 function typeOfSandwich(selection) {
+  $(".choice").each(function() {
+    $(this).removeClass("selected");
+  });
+  $(".previous").removeClass("noShow");
   if (selection == "hero") {
-    $(".sandwich-details").empty().html(hero);
+    $(".choice").each(function( index ) {
+      if (index == 0) {
+        $(this).attr("id", "hero-italian");
+        $(this).children("p").html("Italian");
+      }
+      else if(index == 1) {
+        $(this).attr("id", "hero-wheat");
+        $(this).children("p").html("Whole Wheat");
+      }
+      else if(index == 2) {
+        $(this).attr("id", "hero-flatbread");
+        $(this).children("p").html("Flatbread");
+      }
+      else if(index == 3) {
+        $(this).css("display", "none");
+      }
+      else if(index == 4) {
+        $(this).css("display", "none");
+      }
+    });
   }
-  else if (select == "classic") {
-    $(".sandwich-details").empty().html(classic);
+  else if (selection == "classic") {
+    $(".choice").each(function( index ) {
+      if (index == 0) {
+        $(this).attr("id", "hero-italian");
+        $(this).children("p").html("Italian");
+      }
+      else if(index == 1) {
+        $(this).attr("id", "hero-wheat");
+        $(this).children("p").html("Whole Wheat");
+      }
+      else if(index == 2) {
+        $(this).attr("id", "hero-flatbread");
+        $(this).children("p").html("Flatbread");
+      }
+      else if(index == 3) {
+        $(this).css("display", "none");
+      }
+      else if(index == 4) {
+        $(this).css("display", "none");
+      }
+    });
   }
-  else if (select == "burger") {
-    $(".sandwich-details").empty().html(burger);
+  else if (selection == "burger") {
+    $(".choice").each(function( index ) {
+      if (index == 0) {
+        $(this).attr("id", "hero-italian");
+        $(this).children("p").html("Italian");
+      }
+      else if(index == 1) {
+        $(this).attr("id", "hero-wheat");
+        $(this).children("p").html("Whole Wheat");
+      }
+      else if(index == 2) {
+        $(this).attr("id", "hero-flatbread");
+        $(this).children("p").html("Flatbread");
+      }
+      else if(index == 3) {
+        $(this).css("display", "none");
+      }
+      else if(index == 4) {
+        $(this).css("display", "none");
+      }
+    });
   }
-  else if (select == "bagel") {
-    $(".sandwich-details").empty().html(bagel);
-  }
-  else if (select == "roll") {
-    $(".sandwich-details").empty().html(roll);
+  else if (selection == "bagel") {
+    $(".choice").each(function( index ) {
+      if (index == 0) {
+        $(this).attr("id", "hero-italian");
+        $(this).children("p").html("Italian");
+      }
+      else if(index == 1) {
+        $(this).attr("id", "hero-wheat");
+        $(this).children("p").html("Whole Wheat");
+      }
+      else if(index == 2) {
+        $(this).attr("id", "hero-flatbread");
+        $(this).children("p").html("Flatbread");
+      }
+      else if(index == 3) {
+        $(this).css("display", "none");
+      }
+      else if(index == 4) {
+        $(this).css("display", "none");
+      }
+    });
   }
 }

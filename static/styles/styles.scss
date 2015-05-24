@@ -277,6 +277,9 @@ nav {
   color: red;
   text-decoration: none !important;
 }
+.noShow {
+  display: none;
+}
 @media screen and (max-width: 550px) {
   .navbar {
     height: 90px;
