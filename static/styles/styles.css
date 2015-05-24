@@ -229,82 +229,42 @@ nav {
 /* line 186, styles.scss */
 .sandwich-display {
   border: 1px solid black;
-  width: 400px;
+  width: 600px;
   height: 550px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 193, styles.scss */
-.ingredients-display {
-  border: 1px solid black;
-  width: 200px;
-  height: 550px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (max-width: 550px) {
-  /* line 201, styles.scss */
+  /* line 192, styles.scss */
   .navbar {
     height: 90px;
   }
 
-  /* line 204, styles.scss */
+  /* line 195, styles.scss */
   .navbar-nav {
     width: 100%;
   }
-  /* line 206, styles.scss */
+  /* line 197, styles.scss */
   .navbar-nav li {
     width: 25%;
     top: -5px;
   }
-  /* line 210, styles.scss */
+  /* line 201, styles.scss */
   .navbar-nav #logo {
     display: none;
   }
-  /* line 213, styles.scss */
+  /* line 204, styles.scss */
   .navbar-nav .logo {
     display: block;
   }
 
-  /* line 217, styles.scss */
+  /* line 208, styles.scss */
   .content {
     padding-top: 90px;
   }
 }
 @media screen and (min-width: 550px) {
-  /* line 222, styles.scss */
+  /* line 213, styles.scss */
   .logo {
     display: none;
-  }
-}
-@media screen and (max-width: 992px) {
-  /* line 227, styles.scss */
-  .sandwich-details {
-    position: absolute;
-    right: 0;
-  }
-
-  /* line 231, styles.scss */
-  .ingredients-display {
-    position: absolute;
-    left: 0;
-  }
-}
-@media screen and (max-width: 450px) {
-  /* line 237, styles.scss */
-  .sandwich-details {
-    width: 150px;
-  }
-
-  /* line 240, styles.scss */
-  .sandwich-display {
-    width: 300px;
-  }
-
-  /* line 243, styles.scss */
-  .ingredients-display {
-    width: 150px;
   }
 }
