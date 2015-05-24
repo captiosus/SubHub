@@ -161,7 +161,7 @@ $(document).ready(function(){
       var ingredients;
       var name = $("#create-name").val();
       var user = $("#create-input").val();
-      for (var i = 1; i < allSelected.length;i++) {
+      for (var i = 0; i < allSelected.length;i++) {
         ingredients += allSelected[i] + ", ";
       }
       if (name == undefined) {
@@ -171,7 +171,7 @@ $(document).ready(function(){
         $(this).parent().append("<p class='noSelect'>Please enter a creator name.</p>");
       }
       else {
-        $.post( "../../templates/Success/index.html", { items: ingredients, name: name, user: user } );
+        window.location.replace("../../templates/Success/index.html?ingredients=" + ingredients + "&name=" + name + "&user=" + user);
       }
       console.log(ingredients);
       console.log(name);
