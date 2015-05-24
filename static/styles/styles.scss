@@ -255,6 +255,17 @@ nav {
       color: white;
     }
   }
+  .subset {
+    height: 30px;
+    padding-left: 5px;
+    p {
+      line-height: 30px;
+    }
+  }
+  .expand-button {
+    height: 30px;
+    width: 30px;
+  }
   .next {
     height: 40px;
     line-height: 40px;
@@ -318,6 +329,10 @@ nav {
   .content {
     padding-top: 90px;
   }
+}
+.home-screen {
+  height: 100%;
+  background: url(../data/)
 }
 @media screen and (min-width: 550px) {
   .logo {
