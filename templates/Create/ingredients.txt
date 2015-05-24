@@ -2,45 +2,45 @@ Ingredients
 
 Meats
 Eggs
-Bacon
-Chicken
-Ham
+Bacon-
+Chicken-
+Ham-
 Roast Beef
 Roast Pork
-Salami
+Salami-
 Pastrami
 Bologna
-Turkey
+Turkey-
 Meat Loaf
 Liverwurst
 
 Cheeses
 Parmesan
-American
+American-
 Cheddar
-Swiss
+Swiss-
 Goat
 Feta
 Blue
 Limburger
-Mozzarella
+Mozzarella-
 
 
 Toppings
 Black Beans
-Lettuce
-Tomato
-Avocado
+Lettuce-
+Tomato-
+Avocado-
 Onion
 Mushrooms
-Pickles
+Pickles-
 Peppers
 
 Sauces
 Salsa
-Chipotle
-Mayo
-Ketchup
+Chipotle-
+Mayo-
+Ketchup-
 Mustard
 Barbeque
 Guacamole

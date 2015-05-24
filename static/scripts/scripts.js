@@ -98,13 +98,39 @@ function next(current) {
         $(this).children("p").html("Roll");
         $(this).css("display", "block");
       }
+      else {
+        $(this).css("display", "none");
+      }
     });
   }
   else if (current == 2) {
+    $(".choice").each(function( index ) {
+      if (index == 0) {
+        $(this).attr("id", "meats");
+        $(this).children("p").html("Meats");
+      }
+      else if(index == 1) {
+        $(this).attr("id", "bacon");
+        $(this).children("p").html("Bacon");
+      }
+      else if(index == 2) {
+        $(this).attr("id", "burger");
+        $(this).children("p").html("Hamburger");
+      }
+      else if(index == 3) {
+        $(this).attr("id", "bagel");
+        $(this).children("p").html("Bagel");
+        $(this).css("display", "block");
+      }
+      else if(index == 4) {
+        $(this).css("display", "block");
+      }
+      if (index > 4) {
+        $(this).css("display", "block");
+      }
+    });    
   }
   else if (current == 3) {
-  }
-  else if (current == 4) {
   }
 }
 function typeOfSandwich(selection) {
@@ -132,6 +158,9 @@ function typeOfSandwich(selection) {
       else if(index == 4) {
         $(this).css("display", "none");
       }
+      else {
+        $(this).css("display", "none");
+      }
     });
   }
   else if (selection == "classic") {
@@ -148,10 +177,7 @@ function typeOfSandwich(selection) {
         $(this).attr("id", "classic-rye");
         $(this).children("p").html("Rye Bread");
       }
-      else if(index == 3) {
-        $(this).css("display", "none");
-      }
-      else if(index == 4) {
+      else {
         $(this).css("display", "none");
       }
     });
@@ -170,10 +196,7 @@ function typeOfSandwich(selection) {
         $(this).attr("id", "burger-wheat");
         $(this).children("p").html("Whole Wheat");
       }
-      else if(index == 3) {
-        $(this).css("display", "none");
-      }
-      else if(index == 4) {
+      else {
         $(this).css("display", "none");
       }
     });
@@ -192,10 +215,7 @@ function typeOfSandwich(selection) {
         $(this).attr("id", "bagel-everything");
         $(this).children("p").html("Everything");
       }
-      else if(index == 3) {
-        $(this).css("display", "none");
-      }
-      else if(index == 4) {
+      else {
         $(this).css("display", "none");
       }
     });
