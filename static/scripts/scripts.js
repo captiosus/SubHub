@@ -59,12 +59,10 @@ $(document).ready(function(){
           $(this).parent().append("<p class='noSelect'>Please make a selection.</p>");
         }
       });
-      console.log(allSelected);
     });
     $(".previous").click(function() {
       $(".noSelect").remove();
       if (current == 2) {
-        console.log(previousPage);
         typeOfSandwich(previousPage);
         current--;
         for (var i = numSelect; i > 0; i--) {
@@ -163,7 +161,7 @@ $(document).ready(function(){
       var ingredients;
       var name = $("#create-name").val();
       var user = $("#create-input").val();
-      for (var i = 0; i < allSelected.length;i++) {
+      for (var i = 1; i < allSelected.length;i++) {
         ingredients += allSelected[i] + ", ";
       }
       if (name == undefined) {
@@ -173,8 +171,11 @@ $(document).ready(function(){
         $(this).parent().append("<p class='noSelect'>Please enter a creator name.</p>");
       }
       else {
-        $.post( "../../Success/index.html", { items: ingredients, name: name, user: user } );
+        $.post( "../../templates/Success/index.html", { items: ingredients, name: name, user: user } );
       }
+      console.log(ingredients);
+      console.log(name);
+      console.log(user);
     });
 });
 function next(current) {
