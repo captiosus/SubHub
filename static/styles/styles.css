@@ -568,31 +568,201 @@ nav {
   background-size: contain;
 }
 
+/* line 474, styles.scss */
+#american-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/american.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 477, styles.scss */
+#cheddar-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/cheddar.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 480, styles.scss */
+#ham-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/hamside.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 483, styles.scss */
+#chipotle-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/chipotle.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 486, styles.scss */
+#ketchup-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/ketchup.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 489, styles.scss */
+#mayo-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/mayo.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 492, styles.scss */
+#mustard-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/mustard.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 495, styles.scss */
+#swiss-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/swiss.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 498, styles.scss */
+#turkey-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/swiss.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 501, styles.scss */
+#avocado-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/Avocado.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 504, styles.scss */
+#bacon-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/Bacon.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 507, styles.scss */
+#patty-display {
+  width: 400px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/Hamburger_patty.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 510, styles.scss */
+#hero-italian {
+  width: 400px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/herotop.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 513, styles.scss */
+#hero-italian-bot {
+  width: 400px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/herobot.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 516, styles.scss */
+#burger-sesame {
+  width: 400px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/burgertop.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 519, styles.scss */
+#burger-bot {
+  width: 360px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/burgerbot.png") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 522, styles.scss */
+#classic-white {
+  width: 400px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../data/Ingredients/bread.png") center center no-repeat;
+  background-size: contain;
+}
+
 @media screen and (min-width: 550px) {
-  /* line 475, styles.scss */
+  /* line 527, styles.scss */
   .logo {
     display: none;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 480, styles.scss */
+  /* line 532, styles.scss */
   .sandwich-display {
     width: 100%;
   }
 
-  /* line 483, styles.scss */
+  /* line 535, styles.scss */
   .sandwich-details {
     width: 100% !important;
   }
 }
 @media screen and (max-width: 880px) {
-  /* line 488, styles.scss */
+  /* line 540, styles.scss */
   .sandwich-details {
     width: 600px;
     height: 400px;
   }
 
-  /* line 493, styles.scss */
+  /* line 545, styles.scss */
   .sandwich-contain ul {
     height: 270px;
     overflow-y: auto;

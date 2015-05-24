@@ -20,7 +20,6 @@ $(document).ready(function(){
     var numSelect = 0;
     var allSelected = [];
     var previousPage;
-    var bread;
     $(".next").click(function() {
       $(".noSelect").remove();
       $(".choice").each(function() {
@@ -31,64 +30,6 @@ $(document).ready(function(){
             allSelected.push(selection);
             if(current == 2) { 
               numSelect++;
-            }
-            if (selection == "hero" || selection == "classic" || selection == "burger" || selection == "roll" || selection == "bagel") {
-              return false;
-            }
-            else if (selection == "hero-Italian") {
-              bread = selection;
-              $(".sandwich-display").append("<div id='hero-italian'></div>");
-            }
-            else if (selection == "bagel-Plain") {
-              bread = selection;
-              $(".sandwich-display").append("<div id='bagel-top'></div>");
-            }
-            else if (selection == "burger-Sesame") {
-              bread = selection;
-              $(".sandwich-display").append("<div id='burger-sesame'></div>");
-            }
-            else if (selection == "classic-White") {
-              bread = selection;
-              $(".sandwich-display").append("<div id='classic-white'></div>");
-            }
-            else if (selection == "Tomato") {
-              $(".sandwich-display").append("<div id='tomato-display'></div>");
-            }
-            else if (selection == "Patty") {
-              $(".sandwich-display").append("<div id='patty-display'></div>");
-            }
-            else if (selection == "Lettuce") {
-              $(".sandwich-display").append("<div id='lettuce-display'></div>");
-            }
-            else if (selection == "American") {
-              $(".sandwich-display").append("<div id='american-display'></div>");
-            }
-            else if (selection == "Cheddar") {
-              $(".sandwich-display").append("<div id='cheddar-display'></div>");
-            }
-            else if (selection == "Ham") {
-              $(".sandwich-display").append("<div id='ham-display'></div>");
-            }
-            else if (selection == "Chipotle") {
-              $(".sandwich-display").append("<div id='chipotle-display'></div>");
-            }
-            else if (selection == "Ketchup") {
-              $(".sandwich-display").append("<div id='ketchup-display'></div>");
-            }
-            else if (selection == "Mayo") {
-              $(".sandwich-display").append("<div id='mayo-display'></div>");
-            }
-            else if (selection == "Swiss") {
-              $(".sandwich-display").append("<div id='swiss-display'></div>");
-            }
-            else if (selection == "Turkey") {
-              $(".sandwich-display").append("<div id='turkey-display'></div>");
-            }
-            else if (selection == "Avocado") {
-              $(".sandwich-display").append("<div id='avocado-display'></div>");
-            }
-            else if (selection == "Bacon") {
-              $(".sandwich-display").append("<div id='bacon-display'></div>");
             }
           }
         });
@@ -111,22 +52,6 @@ $(document).ready(function(){
         else if (select) {
           current++;
           next(current);
-          if(current == 3) {
-            if (bread == "hero-Italian") {
-              bread = selection;
-              $(".sandwich-display").append("<div id='hero-italian-bot'></div>");
-            }
-            else if (bread == "bagel-Plain") {
-              $(".sandwich-display").append("<div id='bagel-bot'></div>");
-            }
-            else if (bread == "burger-Sesame") {
-              $(".sandwich-display").append("<div id='burger-bot'></div>");
-            }
-            else if (bread == "classic-White") {
-              bread = selection;
-              $(".sandwich-display").append("<div id='classic-white'></div>");
-            }
-          }
           select = false;
           return false;
         }
@@ -157,8 +82,8 @@ $(document).ready(function(){
           $(this).children("p").children("div").html("+");
           $(this).removeClass("expan").addClass("collapse");
           ($("#Bacon")).hide();
-          ($("#Chicken")).hide();
           ($("#Patty")).hide();
+          ($("#Chicken")).hide();
           ($("#Ham")).hide();
           ($("#Salami")).hide();
           ($("#Turkey")).hide();
@@ -248,7 +173,7 @@ $(document).ready(function(){
         $(this).parent().append("<p class='noSelect'>Please enter a creator name.</p>");
       }
       else {
-        window.location.replace("/Success?ingredients=" + ingredients + "&name=" + name + "&user=" + user);
+        window.location.replace("../../templates/Success/index.html?ingredients=" + ingredients + "&name=" + name + "&user=" + user);
       }
     });
 });
