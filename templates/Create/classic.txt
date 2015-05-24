@@ -1,0 +1,19 @@
+            <p>Types of Classic Sandwich Bread</p>
+            <ul>
+              <li class="choice" id="whole-wheat"><p>Whole Wheat</p></li>
+              <li class="choice" id="white"><p>White Bread</p></li>
+              <li class="choice" id="rye"><p>Rye Bread</p></li>
+            </ul>
+	    <p>Types of Hamburger Buns</p>
+            <ul>
+              <li class="choice" id="white"><p>White Bun</p></li>
+              <li class="choice" id="white-sesame"><p>White Bun with Sesame-Seeds</p></li>
+              <li class="choice" id="whole-wheat"><p>Whole Wheat Bun</p></li>
+            </ul>
+	    <p>Types of Bagels</p>
+            <ul>
+              <li class="choice" id="plain"><p>Plain Bagel</p></li>
+              <li class="choice" id="sesame-seed"><p>Sesame-Seed Bagel</p></li>
+              <li class="choice" id="everything"><p>Everything Bagel</p></li>
+            </ul>
+	
