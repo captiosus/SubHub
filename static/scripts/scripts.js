@@ -20,6 +20,7 @@ $(document).ready(function(){
     var numSelect = 0;
     var allSelected = [];
     var previousPage;
+    var bread;
     $(".next").click(function() {
       $(".noSelect").remove();
       $(".choice").each(function() {
@@ -30,6 +31,64 @@ $(document).ready(function(){
             allSelected.push(selection);
             if(current == 2) { 
               numSelect++;
+            }
+            if (selection == "hero" || selection == "classic" || selection == "burger" || selection == "roll" || selection == "bagel") {
+              return false;
+            }
+            else if (selection == "hero-Italian") {
+              bread = selection;
+              $(".sandwich-display").append("<div id='hero-italian'></div>");
+            }
+            else if (selection == "bagel-Plain") {
+              bread = selection;
+              $(".sandwich-display").append("<div id='bagel-top'></div>");
+            }
+            else if (selection == "burger-Sesame") {
+              bread = selection;
+              $(".sandwich-display").append("<div id='burger-sesame'></div>");
+            }
+            else if (selection == "classic-White") {
+              bread = selection;
+              $(".sandwich-display").append("<div id='classic-white'></div>");
+            }
+            else if (selection == "Tomato") {
+              $(".sandwich-display").append("<div id='tomato-display'></div>");
+            }
+            else if (selection == "Patty") {
+              $(".sandwich-display").append("<div id='patty-display'></div>");
+            }
+            else if (selection == "Lettuce") {
+              $(".sandwich-display").append("<div id='lettuce-display'></div>");
+            }
+            else if (selection == "American") {
+              $(".sandwich-display").append("<div id='american-display'></div>");
+            }
+            else if (selection == "Cheddar") {
+              $(".sandwich-display").append("<div id='cheddar-display'></div>");
+            }
+            else if (selection == "Ham") {
+              $(".sandwich-display").append("<div id='ham-display'></div>");
+            }
+            else if (selection == "Chipotle") {
+              $(".sandwich-display").append("<div id='chipotle-display'></div>");
+            }
+            else if (selection == "Ketchup") {
+              $(".sandwich-display").append("<div id='ketchup-display'></div>");
+            }
+            else if (selection == "Mayo") {
+              $(".sandwich-display").append("<div id='mayo-display'></div>");
+            }
+            else if (selection == "Swiss") {
+              $(".sandwich-display").append("<div id='swiss-display'></div>");
+            }
+            else if (selection == "Turkey") {
+              $(".sandwich-display").append("<div id='turkey-display'></div>");
+            }
+            else if (selection == "Avocado") {
+              $(".sandwich-display").append("<div id='avocado-display'></div>");
+            }
+            else if (selection == "Bacon") {
+              $(".sandwich-display").append("<div id='bacon-display'></div>");
             }
           }
         });
@@ -52,6 +111,22 @@ $(document).ready(function(){
         else if (select) {
           current++;
           next(current);
+          if(current == 3) {
+            if (bread == "hero-Italian") {
+              bread = selection;
+              $(".sandwich-display").append("<div id='hero-italian-bot'></div>");
+            }
+            else if (bread == "bagel-Plain") {
+              $(".sandwich-display").append("<div id='bagel-bot'></div>");
+            }
+            else if (bread == "burger-Sesame") {
+              $(".sandwich-display").append("<div id='burger-bot'></div>");
+            }
+            else if (bread == "classic-White") {
+              bread = selection;
+              $(".sandwich-display").append("<div id='classic-white'></div>");
+            }
+          }
           select = false;
           return false;
         }
@@ -83,6 +158,7 @@ $(document).ready(function(){
           $(this).removeClass("expan").addClass("collapse");
           ($("#Bacon")).hide();
           ($("#Chicken")).hide();
+          ($("#Patty")).hide();
           ($("#Ham")).hide();
           ($("#Salami")).hide();
           ($("#Turkey")).hide();
@@ -116,6 +192,7 @@ $(document).ready(function(){
           $(this).removeClass("collapse").addClass("expan");
           ($("#Bacon")).show();
           ($("#Chicken")).show();
+          ($("#Patty")).show();
           ($("#Ham")).show();
           ($("#Salami")).show();
           ($("#Turkey")).show();
@@ -248,95 +325,101 @@ function next(current) {
       }
       else if(index == 3) {
         $(this).addClass("subset");
+        $(this).attr("id", "Patty");
+        $(this).children("p").html("Burger Patty");
+        $(this).hide();
+      }
+      else if(index == 4) {
+        $(this).addClass("subset");
         $(this).attr("id", "Ham");
         $(this).children("p").html("Ham");
         $(this).hide();
       }
-      else if(index == 4) {
+      else if(index == 5) {
         $(this).addClass("subset");
         $(this).attr("id", "Salami");
         $(this).children("p").html("Salami");
         $(this).hide();
       }
-      else if(index == 5) {
+      else if(index == 6) {
         $(this).addClass("subset");
         $(this).attr("id", "Turkey");
         $(this).children("p").html("Turkey");
         $(this).hide();
       }
-      else if(index == 6) {
+      else if(index == 7) {
         $(this).attr("id", "Cheese");
         $(this).children("p").html("Cheeses<div class='expand-button'>+</div>");
         $(this).addClass("collapse");
         $(this).show();
       }
-      else if(index == 7) {
+      else if(index == 8) {
         $(this).addClass("subset");
         $(this).attr("id", "American");
         $(this).children("p").html("American");
         $(this).hide();
       }
-      else if(index == 8) {
+      else if(index == 9) {
         $(this).addClass("subset");
         $(this).attr("id", "Swiss");
         $(this).children("p").html("Swiss");
         $(this).hide();
       }
-      else if(index == 9) {
+      else if(index == 10) {
         $(this).addClass("subset");
         $(this).attr("id", "Mozzarella");
         $(this).children("p").html("Mozzarella");
         $(this).hide();
       }
-      else if(index == 10) {
+      else if(index == 11) {
         $(this).attr("id", "toppings");
         $(this).children("p").html("Toppings<div class='expand-button'>+</div>");
         $(this).addClass("collapse");
         $(this).show();
       }
-      else if(index == 11) {
+      else if(index == 12) {
         $(this).addClass("subset");
         $(this).attr("id", "Lettuce");
         $(this).children("p").html("Lettuce");
         $(this).hide();
       }
-      else if(index == 12) {
+      else if(index == 13) {
         $(this).addClass("subset");
         $(this).attr("id", "Tomato");
         $(this).children("p").html("Tomato");
         $(this).hide();
       }
-      else if(index == 13) {
+      else if(index == 14) {
         $(this).addClass("subset");
         $(this).attr("id", "Avocado");
         $(this).children("p").html("Avocado");
         $(this).hide();
       }
-      else if(index == 14) {
+      else if(index == 15) {
         $(this).addClass("subset");
         $(this).attr("id", "Pickles");
         $(this).children("p").html("Pickles");
         $(this).hide();
       }
-      else if(index == 15) {
+      else if(index == 16) {
         $(this).attr("id", "sauces");
         $(this).children("p").html("Sauces<div class='expand-button'>+</div>");
         $(this).addClass("collapse");
         $(this).show();
       }
-      else if(index == 16) {
+      else if(index == 17) {
         $(this).addClass("subset");
         $(this).attr("id", "Chipotle");
         $(this).children("p").html("Chipotle");
         $(this).hide();
       }
-      else if(index == 17) {
+      else if(index == 18) {
         $(this).addClass("subset");
         $(this).attr("id", "Mayo");
         $(this).children("p").html("Mayo");
         $(this).hide();
       }
-      else if(index == 18) {
+      else if(index == 19) {
         $(this).addClass("subset");
         $(this).attr("id", "Ketchup");
         $(this).children("p").html("Ketchup");
