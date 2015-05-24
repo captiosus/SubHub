@@ -130,36 +130,68 @@ nav {
   margin-bottom: 30px;
 }
 .sandwich {
-  width: 280px;
+  width: 310px;
+  height: 650px;
+  padding-top: 29px;
+  background: url(../data/polaroid.png) center center no-repeat;
+  background-size: contain;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 15px;
-  padding-left: 25px;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
   position: relative;
-  @extend .material-shadow;
+  margin-bottom: 20px;
 }
 .sandwich-name {
   margin: 0;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 .sandwich-picture {
-  border: 1px solid black;
-  height: 240px;
-  width: 230px;
+  height: 272px;
+  width: 273px;
+  margin-left: 19px;
+}
+.sandwich-receipt {
+  padding-left: 10px;
+  height: 303px;
+  width: 151px;
+  margin-left: 138px;
+  margin-top: 15px;
 }
 .ingredients {
   margin-top: 10px;
   font-size: 14px;
   font-weight: normal;
 }
+.rating {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: normal;
+}
+.receipt-title {
+  margin-top: 10px;
+  margin-left: -10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.server-name {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: normal;
+}
 .ingredients-list {
   width: 190px;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 15px;
   font-size: 14px;
+  padding-left: 5px;
+  list-style: none;
+  li + li {
+    margin-top: 5px;
+  }
 }
 .creator-name {
   font-size: 14px;
@@ -202,7 +234,6 @@ nav {
     padding-left: 0;
     list-style: none;
     li {
-      border-top: 1px solid black;
       height: 50px;
       p {
         text-decoration: none;
@@ -214,27 +245,14 @@ nav {
         margin-bottom: 0;
       }
     }
-    li:last-child {
-      border-bottom: 1px solid black;
-    }
-
     li:hover {
       border-bottom: 0 !important;
       background-color: $select-color;
       color: white;
-      border-top: 1px solid white;
-    }
-    li:hover + li {
-      border-top: 1px solid white;
     }
     .selected {
       background-color: $select-color;
       color: white;
-      border-top: 1px solid white;
-      border-bottom: 0 !important;
-    }
-    .selected + li {
-      border-top: 1px solid white;
     }
   }
   .next {
@@ -317,6 +335,7 @@ nav {
 @media screen and (max-width: 880px) {
   .sandwich-details {
     width: 600px;
+    height: 400px;
   }
 }
 

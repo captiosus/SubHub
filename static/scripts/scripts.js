@@ -13,53 +13,21 @@ $(document).ready(function(){
         }
       });
     }
-    $(".ingredients-list").each(function( index ) {
-      if ($(this).height() > 20) {
-        $(this).css("overflow-y", "hidden");
-        $(this).css("height", "20px");
-        $(this).parent().append("<p class='more'>See More...</p>");
-      }
-      else {
-        $(this).css("padding-bottom", "27px");
-      }
-    })
-    var expanded = false;
-    $(".more").click(function() {
-      if (expanded) {
-        $(this).parent().children(".ingredients-list").css("overflow-y", "hidden");
-        $(this).parent().children(".ingredients-list").css("height", "20px");
-        $(this).empty().html("See More...");
-        expanded = false;
-      }
-      else {
-        $(this).parent().children(".ingredients-list").css("overflow-y", "visible");
-        $(this).parent().children(".ingredients-list").css("height", "auto");
-        $(this).empty().html("See Less...");
-        expanded = true;
-      }
-    });
     var current = 0;
     var type;
     var select = false;
     var selection;
+    var allSelected = [];
     $(".next").click(function() {
       $(".noSelect").remove();
       $(".choice").each(function() {
-        if (current == 0) {
-          $(".choice").each(function() {
-            if ($(this).hasClass("selected")) {
-              select = true;
-              selection = $(this).attr("id");
-            }
-          });
-        }
-        else {
-          $(".choice").each(function() {
-            if ($(this).hasClass("selected")) {
-              select = true;
-            }
-          });
-        }
+        $(".choice").each(function() {
+          if ($(this).hasClass("selected")) {
+            select = true;
+            selection = $(this).attr("id");
+            allSelected.push(selection);
+          }
+        });
         if (select && current == 0) {
           if (selection == "roll") {
             current+=2;
@@ -87,6 +55,7 @@ $(document).ready(function(){
       $(".noSelect").remove();
       current--;
       next(current);
+      allSelected.pop();
     });
     $(".choice").click(function() {
       if ($(this).hasClass("selected")) {
@@ -105,6 +74,7 @@ function next(current) {
     $(this).removeClass("selected");
   });
   if (current == 0) {
+    $(".previous").addClass("noShow");
     $(".choice").each(function( index ) {
       if (index == 0) {
         $(this).attr("id", "hero");
@@ -167,16 +137,16 @@ function typeOfSandwich(selection) {
   else if (selection == "classic") {
     $(".choice").each(function( index ) {
       if (index == 0) {
-        $(this).attr("id", "hero-italian");
-        $(this).children("p").html("Italian");
-      }
-      else if(index == 1) {
-        $(this).attr("id", "hero-wheat");
+        $(this).attr("id", "classic-whole-wheat");
         $(this).children("p").html("Whole Wheat");
       }
+      else if(index == 1) {
+        $(this).attr("id", "classic-white");
+        $(this).children("p").html("White Bread");
+      }
       else if(index == 2) {
-        $(this).attr("id", "hero-flatbread");
-        $(this).children("p").html("Flatbread");
+        $(this).attr("id", "classic-rye");
+        $(this).children("p").html("Rye Bread");
       }
       else if(index == 3) {
         $(this).css("display", "none");
@@ -189,16 +159,16 @@ function typeOfSandwich(selection) {
   else if (selection == "burger") {
     $(".choice").each(function( index ) {
       if (index == 0) {
-        $(this).attr("id", "hero-italian");
-        $(this).children("p").html("Italian");
+        $(this).attr("id", "burger-plain");
+        $(this).children("p").html("Plain");
       }
       else if(index == 1) {
-        $(this).attr("id", "hero-wheat");
-        $(this).children("p").html("Whole Wheat");
+        $(this).attr("id", "burger-sesame");
+        $(this).children("p").html("Sesame");
       }
       else if(index == 2) {
-        $(this).attr("id", "hero-flatbread");
-        $(this).children("p").html("Flatbread");
+        $(this).attr("id", "burger-wheat");
+        $(this).children("p").html("Whole Wheat");
       }
       else if(index == 3) {
         $(this).css("display", "none");
@@ -211,16 +181,16 @@ function typeOfSandwich(selection) {
   else if (selection == "bagel") {
     $(".choice").each(function( index ) {
       if (index == 0) {
-        $(this).attr("id", "hero-italian");
-        $(this).children("p").html("Italian");
+        $(this).attr("id", "bagel-plain");
+        $(this).children("p").html("Plain");
       }
       else if(index == 1) {
-        $(this).attr("id", "hero-wheat");
-        $(this).children("p").html("Whole Wheat");
+        $(this).attr("id", "bagel-sesame");
+        $(this).children("p").html("Sesame");
       }
       else if(index == 2) {
-        $(this).attr("id", "hero-flatbread");
-        $(this).children("p").html("Flatbread");
+        $(this).attr("id", "bagel-everything");
+        $(this).children("p").html("Everything");
       }
       else if(index == 3) {
         $(this).css("display", "none");
