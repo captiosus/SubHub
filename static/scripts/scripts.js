@@ -37,6 +37,7 @@ $(document).ready(function(){
           if (selection == "roll") {
             current+=2;
             next(current);
+            select = false;
           }
           else {
             typeOfSandwich(selection);
@@ -148,12 +149,31 @@ $(document).ready(function(){
         $(this).removeClass("selected");
       }
       else {
-        if (current != 2) {
-          $(".choice").each(function() {
-            $(this).removeClass("selected");
-          });
+        if (current != 3) {
+          if (current != 2) {
+            $(".choice").each(function() {
+              $(this).removeClass("selected");
+            });
+          }
+          $(this).addClass("selected");
         }
-        $(this).addClass("selected");
+      }
+    });
+    $(".finish").click(function() {
+      var ingredients;
+      var name = $("#create-name").val();
+      var user = $("#create-input").val();
+      for (var i = 0; i < allSelected.length;i++) {
+        ingredients += allSelected[i] + ", ";
+      }
+      if (name == undefined) {
+        $(this).parent().append("<p class='noSelect'>Please enter sandwich name.</p>");
+      }
+      else if (user == undefined) {
+        $(this).parent().append("<p class='noSelect'>Please enter a creator name.</p>");
+      }
+      else {
+        $.post( "../../Success/index.html", { items: ingredients, name: name, user: user } );
       }
     });
 });
@@ -206,6 +226,8 @@ function next(current) {
     });
   }
   else if (current == 2) {
+    $(".next").removeClass("noShow");
+    $(".finish").addClass("noShow");
     $(".create-title").html("Types of Filling");
     $(".choice").each(function( index ) {
       if (index == 0) {
@@ -325,6 +347,34 @@ function next(current) {
     });    
   }
   else if (current == 3) {
+    $(".create-title").html("Sandwich Details");
+    $(".finish").removeClass("noShow");
+    $(".previous").removeClass("noShow");
+    $(".next").addClass("noShow");
+    $(".choice").each(function( index ) {
+      if (index == 0) {
+        $(this).attr("id", "sandwich-name");
+        $(this).html('<input id="create-name" type="text" placeholder="Sandwich Name">');
+        $(this).removeClass("subset");
+        $(this).removeClass("collapse");
+        $(this).removeClass("expan");
+        $(this).removeClass("choice");
+        $(this).css("display", "block");
+        $(this).show();
+      }
+      else if(index == 1) {
+        $(this).attr("id", "username");
+        $(this).html('<input id="create-input" type="text" placeholder="Creator\'s Name">');
+        $(this).removeClass("subset");
+        $(this).removeClass("choice");
+        $(this).css("display", "block");
+        $(this).show()
+      }
+      else {
+        $(this).css("display", "none");
+        $(this).removeClass("subset");
+      }
+    });
   }
 }
 function typeOfSandwich(selection) {

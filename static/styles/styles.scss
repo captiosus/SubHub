@@ -103,28 +103,33 @@ nav {
   height: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 260px;
+  top: 400px;
+  position: relative;
 }
 .explore {
+  @extend .material-shadow;
+  border-radius: 10px;
+  background-color: $select-color;
   height: 50px;
   width: 200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: 1px solid black;
   a {
     line-height: 50px;
     color: black;
   }
 }
 .create {
+  @extend .material-shadow;
+  border-radius: 10px;
+  background-color: $select-color;
   height: 40px;
   width: 150px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   text-align: center;
-  border: 1px solid black;
   a {
     line-height: 40px;
     color: $primary-text;
@@ -240,7 +245,7 @@ nav {
     list-style: none;
     height: 400px;
     overflow-y: auto;
-    li {
+    .choice {
       height: 50px;
       p {
         text-decoration: none;
@@ -252,7 +257,7 @@ nav {
         margin-bottom: 0;
       }
     }
-    li:hover {
+    .choice:hover {
       border-bottom: 0 !important;
       background-color: $select-color;
       color: white;
@@ -306,6 +311,18 @@ nav {
     left: 10px;
     border: 1px solid black;
   }
+  .finish {
+    height: 40px;
+    line-height: 40px;
+    width: 80px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    border: 1px solid black;
+  }
 }
 .sandwich-display {
   @extend .material-shadow;
@@ -348,13 +365,44 @@ nav {
 }
 .home-screen {
   height: 720px;
+  width: 1080px;
   background: url(../data/background.png) center center no-repeat;
-  background-size: cover;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+.home {
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-top: 20px;
 }
 .home-text {
   margin-top: 50px;
   font-size: 24px;
   text-align: center;
+}
+#create-name {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  line-height: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#create-input {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  line-height: 50px;
+  border: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 @media screen and (min-width: 550px) {
   .logo {
