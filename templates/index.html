@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="stylesheet"
           type="text/css"
-          href="../static/styles/bootstrap.css">
-    <link href='../static/styles/styles.css'
+          href="../../static/styles/bootstrap.css">
+    <link href='../../static/styles/styles.css'
           rel='stylesheet'
           type='text/css'>
     <script src=
@@ -14,23 +15,32 @@
     <script src=
  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
     </script>
-    <script src="../static/scripts/scripts.js"></script>
+    <script src="../../static/scripts/scripts.js"></script>
     <title>Sub Hub</title>
   </head>
   <body>
     <nav class="navbar">
       <div class="container-fluid">
-        <div class="logo">Sub Hub</div>
+        <div class="logo"><a href="/"><div class="logo-pic"></div></a></div>
         <ul class="navbar-nav">
           <li><a href="/">Home</a></li><!--
           --><li><a href="/Gallery">Gallery</a></li><!--
-          --><li id="logo"><a href="/">Sub Hub</a></li><!--
-          --><li><a href="/Create">Create</a></li><!--
-          --><li><a class="active" href="/About">About</a></li>
+          --><li id="logo"><a href="/"><div class="logo-pic"></div></a></li><!--
+          --><li><a class="active" href="/Create">Create</a></li><!--
+          --><li><a href="/About">About</a></li>
         </ul>
       </div>
     </nav>
     <div class="content">
+      <div class="button-group">
+        <div class="explore">
+          <a href="Gallery/index.html">SANDWICH GALLERY</a>
+        </div>
+        <div class="create">
+          <a href="Create/index.html">Create A Sandwich</a>
+        </div>
+      </div>
+      
     </div>
   </body>
 </html>
