@@ -443,30 +443,6 @@ nav {
   background: url($type) center center no-repeat;
   background-size: contain;
 }
-@mixin bun-top-small($type) {
-  width: 400px;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  background: url($type) center center no-repeat;
-  background-size: contain;
-}
-@mixin bun-bot-small($type) {
-  width: 360px;
-  height: 70px;
-  margin-left: auto;
-  margin-right: auto;
-  background: url($type) center center no-repeat;
-  background-size: contain;
-}
-@mixin ingredient-small($type) {
-  width: 400px;
-  height: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  background: url($type) center center no-repeat;
-  background-size: contain;
-}
 @mixin bun-top($type) {
   width: 400px;
   height: 100px;
@@ -547,7 +523,7 @@ nav {
   @include bun-top("../data/Ingredients/bread.png");
 }
 
-@mixin bun-top($type) {
+@mixin bun-top-small($type) {
   width: 200px;
   height: 50px;
   margin-left: auto;
@@ -555,9 +531,17 @@ nav {
   background: url($type) center center no-repeat;
   background-size: contain;
 }
-@mixin bun-bot($type) {
+@mixin bun-bot-small($type) {
   width: 180px;
   height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url($type) center center no-repeat;
+  background-size: contain;
+}
+@mixin ingredient-small($type) {
+  width: 200px;
+  height: 30px;
   margin-left: auto;
   margin-right: auto;
   background: url($type) center center no-repeat;
@@ -608,23 +592,23 @@ nav {
 #bacon-display-small {
   @include ingredient-small("../data/Ingredients/Bacon.png");
 }
-#patty-display {
-  @include ingredient("../data/Ingredients/Hamburger_patty.png");
+#patty-display-small {
+  @include ingredient-small("../data/Ingredients/Hamburger_patty.png");
 }
-#hero-italian {
-  @include bun-top("../data/Ingredients/herotop.png");
+#hero-italian-small {
+  @include bun-top-small("../data/Ingredients/herotop.png");
 }
-#hero-italian-bot {
-  @include bun-top("../data/Ingredients/herobot.png");
+#hero-italian-bot-small {
+  @include bun-top-small("../data/Ingredients/herobot.png");
 }
-#burger-sesame {
-  @include bun-top("../data/Ingredients/burgertop.png");
+#burger-sesame-small {
+  @include bun-top-small("../data/Ingredients/burgertop.png");
 }
-#burger-bot {
-  @include bun-bot("../data/Ingredients/burgerbot.png");
+#burger-bot-small {
+  @include bun-bot-small("../data/Ingredients/burgerbot.png");
 }
-#classic-white {
-  @include bun-top("../data/Ingredients/bread.png");
+#classic-white-small {
+  @include bun-top-small("../data/Ingredients/bread.png");
 }
 
 @media screen and (min-width: 550px) {
