@@ -160,6 +160,7 @@ nav {
   height: 272px;
   width: 273px;
   margin-left: 19px;
+  position: relative;
 }
 .sandwich-receipt {
   padding-left: 10px;
@@ -406,6 +407,11 @@ nav {
   border: 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+}
+.ing-contain {
+  position: absolute;
+  bottom: 50px;
+  left: 35px;
 }
 .success {
   font-size: 30px;
