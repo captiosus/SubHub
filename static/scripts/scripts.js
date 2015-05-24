@@ -28,9 +28,8 @@ $(document).ready(function(){
             select = true;
             selection = $(this).attr("id");
             allSelected.push(selection);
-            console.log(selection);
             if(current == 2) { 
-              selection++;
+              numSelect++;
             }
           }
         });
@@ -82,66 +81,66 @@ $(document).ready(function(){
         if ($(this).attr("id") == "meats") {
           $(this).children("p").children("div").html("+");
           $(this).removeClass("expan").addClass("collapse");
-          ($("#bacon")).hide();
-          ($("#chicken")).hide();
-          ($("#ham")).hide();
-          ($("#salami")).hide();
-          ($("#turkey")).hide();
+          ($("#Bacon")).hide();
+          ($("#Chicken")).hide();
+          ($("#Ham")).hide();
+          ($("#Salami")).hide();
+          ($("#Turkey")).hide();
         }
-        else if ($(this).attr("id") == "cheese") {
+        else if ($(this).attr("id") == "Cheese") {
           $(this).children("p").children("div").html("+");
           $(this).removeClass("expan").addClass("collapse");
-          ($("#american")).hide();
-          ($("#swiss")).hide();
-          ($("#mozzarella")).hide();
+          ($("#American")).hide();
+          ($("#Swiss")).hide();
+          ($("#Mozzarella")).hide();
         }
         else if ($(this).attr("id") == "toppings") {
           $(this).children("p").children("div").html("+");
           $(this).removeClass("expan").addClass("collapse");
-          ($("#lettuce")).hide();
-          ($("#tomato")).hide();
-          ($("#avocado")).hide();
-          ($("#pickles")).hide();
+          ($("#Lettuce")).hide();
+          ($("#Tomato")).hide();
+          ($("#Avocado")).hide();
+          ($("#Pickles")).hide();
         }
         else if ($(this).attr("id") == "sauces") {
           $(this).children("p").children("div").html("+");
           $(this).removeClass("expan").addClass("collapse");
-          ($("#chipotle")).hide();
-          ($("#mayo")).hide();
-          ($("#ketchup")).hide();
+          ($("#Chipotle")).hide();
+          ($("#Mayo")).hide();
+          ($("#Ketchup")).hide();
         }
       }
       else if ($(this).hasClass("collapse")) {
         if ($(this).attr("id") == "meats") {
           $(this).children("p").children("div").html("-");
           $(this).removeClass("collapse").addClass("expan");
-          ($("#bacon")).show();
-          ($("#chicken")).show();
-          ($("#ham")).show();
-          ($("#salami")).show();
-          ($("#turkey")).show();
+          ($("#Bacon")).show();
+          ($("#Chicken")).show();
+          ($("#Ham")).show();
+          ($("#Salami")).show();
+          ($("#Turkey")).show();
         }
-        else if ($(this).attr("id") == "cheese") {
+        else if ($(this).attr("id") == "Cheese") {
           $(this).children("p").children("div").html("-");
           $(this).removeClass("collapse").addClass("expan");
-          ($("#american")).show();
-          ($("#swiss")).show();
-          ($("#mozzarella")).show();
+          ($("#American")).show();
+          ($("#Swiss")).show();
+          ($("#Mozzarella")).show();
         }
         else if ($(this).attr("id") == "toppings") {
           $(this).children("p").children("div").html("-");
           $(this).removeClass("collapse").addClass("expan");
-          ($("#lettuce")).show();
-          ($("#tomato")).show();
-          ($("#avocado")).show();
-          ($("#pickles")).show();
+          ($("#Lettuce")).show();
+          ($("#Tomato")).show();
+          ($("#Avocado")).show();
+          ($("#Pickles")).show();
         }
         else if ($(this).attr("id") == "sauces") {
           $(this).children("p").children("div").html("-");
           $(this).removeClass("collapse").addClass("expan");
-          ($("#chipotle")).show();
-          ($("#mayo")).show();
-          ($("#ketchup")).show();
+          ($("#Chipotle")).show();
+          ($("#Mayo")).show();
+          ($("#Ketchup")).show();
         }
       }
       else if ($(this).hasClass("selected")) {
@@ -401,16 +400,6 @@ function typeOfSandwich(selection) {
       else if(index == 2) {
         $(this).attr("id", "hero-Flatbread");
         $(this).children("p").html("Flatbread");
-        $(this).removeClass("subset");
-        $(this).show();
-      }
-      else if(index == 3) {
-        $(this).css("display", "none");
-        $(this).removeClass("subset");
-        $(this).show();
-      }
-      else if(index == 4) {
-        $(this).css("display", "none");
         $(this).removeClass("subset");
         $(this).show();
       }
