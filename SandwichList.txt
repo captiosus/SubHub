@@ -1,4 +1,4 @@
 BLT Chipotle::Bob::Bacon,Lettuce,Tomato,Chipotle::12
 Ice Cream Sundae::Sunni::Bananas,Ice Cream,Strawberries::17
-Hamburger::McDonald's::Buns,Meat,Lettuce,Tomato,Pickles,Cheese::100
+Hamburger::McDonald's::Buns,Meat,Lettuce,Tomato,Pickles,Cheese,Special Sauce,Sesame Seeds,MSG,grease,stuff,morestuff,lol::100
 Tuna::Fish::Tuna::-10

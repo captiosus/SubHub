@@ -97,6 +97,9 @@ def gallery():
         s +='            <h2 class="sandwich-name">'
         s +=Sandwiches[x].name
         s +='</h2>\n'
+        s +='<h2 class="creator-name">Creator: '
+        s +=Sandwiches[x].creator
+        s +='</h2>\n'
         s +='            <div class="sandwich-picture"></div>\n'
         s +='            <h2 class="ingredients">Ingredients</h2>\n'
         s +='            <p class="ingredients-list">'
