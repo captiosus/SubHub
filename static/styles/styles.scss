@@ -404,6 +404,34 @@ nav {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
+.success {
+  font-size: 30px;
+  text-align: center;
+}
+.success-links {
+  margin-top: 50px;
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.success-button {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  @extend .material-shadow;
+  border-radius: 10px;
+  background-color: $select-color;
+  text-align: center;
+  display: inline-block;
+  margin-left: 100px;
+  a {
+    color: black;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 @media screen and (min-width: 550px) {
   .logo {
     display: none;
