@@ -741,7 +741,7 @@ nav {
 /* line 550, styles.scss */
 #tomato-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/Tomato.png") center center no-repeat;
@@ -771,7 +771,7 @@ nav {
 /* line 559, styles.scss */
 #lettuce-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/Lettuce.png") center center no-repeat;
@@ -781,7 +781,7 @@ nav {
 /* line 562, styles.scss */
 #american-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/american.png") center center no-repeat;
@@ -791,7 +791,7 @@ nav {
 /* line 565, styles.scss */
 #cheddar-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/cheddar.png") center center no-repeat;
@@ -801,7 +801,7 @@ nav {
 /* line 568, styles.scss */
 #ham-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/hamside.png") center center no-repeat;
@@ -811,7 +811,7 @@ nav {
 /* line 571, styles.scss */
 #chipotle-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/chipotle.png") center center no-repeat;
@@ -821,7 +821,7 @@ nav {
 /* line 574, styles.scss */
 #ketchup-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/ketchup.png") center center no-repeat;
@@ -831,7 +831,7 @@ nav {
 /* line 577, styles.scss */
 #mayo-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/mayo.png") center center no-repeat;
@@ -841,7 +841,7 @@ nav {
 /* line 580, styles.scss */
 #mustard-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/mustard.png") center center no-repeat;
@@ -851,7 +851,7 @@ nav {
 /* line 583, styles.scss */
 #swiss-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/swiss.png") center center no-repeat;
@@ -861,7 +861,7 @@ nav {
 /* line 586, styles.scss */
 #turkey-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/swiss.png") center center no-repeat;
@@ -871,7 +871,7 @@ nav {
 /* line 589, styles.scss */
 #avocado-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/Avocado.png") center center no-repeat;
@@ -881,7 +881,7 @@ nav {
 /* line 592, styles.scss */
 #bacon-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/Bacon.png") center center no-repeat;
@@ -891,7 +891,7 @@ nav {
 /* line 595, styles.scss */
 #patty-display-small {
   width: 200px;
-  height: 30px;
+  height: 25px;
   margin-left: auto;
   margin-right: auto;
   background: url("../data/Ingredients/Hamburger_patty.png") center center no-repeat;
