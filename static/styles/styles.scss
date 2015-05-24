@@ -541,7 +541,7 @@ nav {
 }
 @mixin ingredient-small($type) {
   width: 200px;
-  height: 15px;
+  height: 20px;
   margin-left: auto;
   margin-right: auto;
   background: url($type) center center no-repeat;
