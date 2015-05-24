@@ -107,8 +107,7 @@ function next(current) {
     $(".choice").each(function( index ) {
       if (index == 0) {
         $(this).attr("id", "meats");
-        $(this).children("p").html("Meats");
-        $(this).append("<div class='expand-button'>+</div>");
+        $(this).children("p").html("Meats<div class='expand-button'>+</div>");
         $(this).show();
       }
       else if(index == 1) {
