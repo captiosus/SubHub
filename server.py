@@ -122,7 +122,6 @@ def success():
             choppedIng[x] = string.replace(choppedIng[x],"-"," ")
             i = choppedIng[x].find(' ')
             choppedIng[x] = choppedIng[x][i+1::]
-            print choppedIng[x]
         s += choppedIng[x]
         if x!=len(choppedIng)-1:
             s+=","
@@ -154,7 +153,10 @@ def gallery():
         s +='              <h2 class="ingredients">Ingredients</h2>\n'
         s +='              <ul class="ingredients-list">\n'
         for y in range(0,len(Sandwiches[x].ingredients)):
-            s +='<li>'+Sandwiches[x].ingredients[y]+'</li>\n'
+            s +='<li>'
+            if y == 0:
+                s +='Bread: '
+            s +=Sandwiches[x].ingredients[y]+'</li>\n'
         s +='</ul>\n'
         s +='            </div>\n'
         s +='          </div>\n'

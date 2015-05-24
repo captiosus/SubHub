@@ -1,1 +1,3 @@
 Monster Burger::thing.foo::burger::wheat,bacon,chicken,ham,salami,turkey,american,swiss,mozzarella,lettuce,tomato,avocado,pickles,chipotle,mayo,ketchup::0::0
+Bacon Avocado Chipotle::Ferry's::bagel::plain,bacon,avocado,chipotle::0::0
+The ABC::niceme.me::classic::Rye,Bacon,Avocado,Chipotle::0::0
