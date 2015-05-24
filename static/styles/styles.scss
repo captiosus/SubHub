@@ -160,6 +160,7 @@ nav {
   height: 272px;
   width: 273px;
   margin-left: 19px;
+  position: relative;
 }
 .sandwich-receipt {
   padding-left: 10px;
@@ -407,6 +408,11 @@ nav {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
+.ing-contain {
+  position: absolute;
+  bottom: 50px;
+  left: 35px;
+}
 .success {
   font-size: 30px;
   text-align: center;
@@ -533,7 +539,7 @@ nav {
 }
 @mixin bun-bot-small($type) {
   width: 180px;
-  height: 35px;
+  height: 30px;
   margin-left: auto;
   margin-right: auto;
   background: url($type) center center no-repeat;
