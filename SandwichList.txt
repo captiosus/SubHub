@@ -1,6 +1,1 @@
-BLT Chipotle::Bob::Sandwich::Bacon,Lettuce,Tomato,Chipotle::12::32
-Ice Cream Sundae::Sunni::Bagel::Bananas,Ice Cream,Strawberries::17::10
-Hamburger::McDonald's::Classic::Buns,Meat,Lettuce,Tomato,Pickles,Cheese,Special Sauce,Sesame Seeds,MSG,grease,stuff,morestuff,lol::100::12
-Tuna::Fish::Classic::Tuna::10::20
-Rusty on Rye::Old Guy::Classic::Glue,Wooden Planks::1::100
-Sandvich::Heavy::Sandwich::Bread,Bologna,More Bologna::20::0
+Monster Burger::thing.foo::burger::wheat,bacon,chicken,ham,salami,turkey,american,swiss,mozzarella,lettuce,tomato,avocado,pickles,chipotle,mayo,ketchup::0::0

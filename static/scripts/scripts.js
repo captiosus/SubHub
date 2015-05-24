@@ -172,7 +172,7 @@ $(document).ready(function(){
         $(this).parent().append("<p class='noSelect'>Please enter a creator name.</p>");
       }
       else {
-        window.location.replace("../../templates/Success/index.html?ingredients=" + ingredients + "&name=" + name + "&user=" + user);
+        window.location.replace("/Success?ingredients=" + ingredients + "&name=" + name + "&user=" + user);
       }
     });
 });

@@ -1,4 +1,5 @@
 from flask import Flask, render_template_string, render_template, request, redirect
+import string
 app = Flask(__name__)
 
 class Sandwich(object):
@@ -69,21 +70,6 @@ def sortByType(param):
             Sandwiches.insert(0,Sandwiches.pop(i))
         i+=1
     
-sortByType("Sandwich")
-for x in range(0,len(Sandwiches)):
-    if Sandwiches[x].Type=="Sandwich":
-        print Sandwiches[x].name
-sortByType("Classic")
-for x in range(0,len(Sandwiches)):
-    if Sandwiches[x].Type=="Classic":
-        print Sandwiches[x].name
-sortByNewest()
-for x in range(0,len(Sandwiches)):
-    print Sandwiches[x].name
-sortByLikes()
-for x in range(0,len(Sandwiches)):
-    print Sandwiches[x].name
-    
 def nameCheck(n):
     for x in range(0,len(Sandwiches)):
         if Sandwiches[x].name==n:
@@ -104,8 +90,7 @@ def Home():
 
 @app.route('/Create', methods=['POST', 'GET'])
 def create():
-    if request.method=='GET':
-        return render_template('Create/index.html')
+    return render_template('Create/index.html')
     #else:
         #if request.form["name"]=="" or request.form["creator"]=="":
             #return render_template('Create/error.html')
@@ -121,6 +106,30 @@ def create():
 def about():
     return render_template('About/index.html')
 
+@app.route('/Success')
+def success():
+    print request.args['ingredients']
+    rawIngredients = request.args['ingredients']
+    Sname = request.args['name']
+    Smaker = request.args['user']
+    choppedIng = rawIngredients.split(', ')
+    choppedIng = choppedIng[0:len(choppedIng)-1]
+    f = open('SandwichList.txt','a')
+    s = ""
+    s += Sname+"::"+Smaker+"::"+choppedIng[0]+"::"
+    for x in range(1,len(choppedIng)):
+        if x == 1:
+            choppedIng[x] = string.replace(choppedIng[x],"-"," ")
+            i = choppedIng[x].find(' ')
+            choppedIng[x] = choppedIng[x][i+1::]
+            print choppedIng[x]
+        s += choppedIng[x]
+        if x!=len(choppedIng)-1:
+            s+=","
+    s +="::0::0\n"
+    f.write(s)
+    return render_template('Success/index.html')
+
 @app.route('/Gallery')
 def gallery():
     g = ""
@@ -134,27 +143,23 @@ def gallery():
         sep = SList[x].split('::')
         Sandwiches.append(Sandwich(sep[0],sep[1],sep[2],sep[3].split(','),sep[4],sep[5]))
     for x in range(0,len(Sandwiches)):
-        s +='        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">\n'
+        s +='        <div class="col-md-4 col-sm-6 col-xs-12">\n'
         s +='          <div class="sandwich">\n'
-        s +='            <h2 class="sandwich-name">'
-        s +=Sandwiches[x].name
-        s +='</h2>\n'
-        s +='<h2 class="creator-name">Creator: '
-        s +=Sandwiches[x].creator
-        s +='</h2>\n'
         s +='            <div class="sandwich-picture"></div>\n'
+        s +='            <h2 class="sandwich-name">' + Sandwiches[x].name + '</h2>\n'
+        s +='            <div class="sandwich-receipt">\n'
+        s +='              <h2 class="receipt-title">SubHub</h2>\n'
+        s +='              <h2 class="server-name">'+'Server: ' +Sandwiches[x].creator+'</h2>\n'
+        s +='              <h2 class="rating">' + 'Rating: ' + str(int(Sandwiches[x].likes)-int(Sandwiches[x].dislikes)) + '</h2>\n'
+        s +='              <h2 class="ingredients">Ingredients</h2>\n'
+        s +='              <ul class="ingredients-list">\n'
         for y in range(0,len(Sandwiches[x].ingredients)):
-            s+='<div class="' + Sandwiches[x].ingredients[y] + '"></div>\n'
-        s +='            <h2 class="ingredients">Ingredients</h2>\n'
-        s +='            <p class="ingredients-list">'
-        for y in range(0,len(Sandwiches[x].ingredients)):
-            s+=Sandwiches[x].ingredients[y]
-            if y != len(Sandwiches[x].ingredients)-1:
-                s+=", "
-        s +='</p>\n'
+            s +='<li>'+Sandwiches[x].ingredients[y]+'</li>\n'
+        s +='</ul>\n'
+        s +='            </div>\n'
         s +='          </div>\n'
         s +='        </div>\n'
-        if (x + 1)%4 == 0:
+        if (x + 1)%3 == 0:
             s+='      </div>'
             s+='      <div class="row">'
     g += s
