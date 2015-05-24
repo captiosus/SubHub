@@ -259,17 +259,29 @@ nav {
 .sandwich-details ul li:last-child {
   border-bottom: 1px solid black;
 }
-/* line 215, styles.scss */
+/* line 216, styles.scss */
 .sandwich-details ul li:hover {
-  background-color: #ff8002;
+  border-bottom: 0 !important;
+  background-color: #ff9a23;
   color: white;
-  border-top: 1px solid #ff8002;
+  border-top: 1px solid white;
 }
-/* line 220, styles.scss */
+/* line 222, styles.scss */
 .sandwich-details ul li:hover + li {
-  border-top: 0;
+  border-top: 1px solid white;
 }
-/* line 224, styles.scss */
+/* line 225, styles.scss */
+.sandwich-details ul .selected {
+  background-color: #ff9a23;
+  color: white;
+  border-top: 1px solid white;
+  border-bottom: 0 !important;
+}
+/* line 231, styles.scss */
+.sandwich-details ul .selected + li {
+  border-top: 1px solid white;
+}
+/* line 235, styles.scss */
 .sandwich-details .next {
   height: 40px;
   line-height: 40px;
@@ -282,7 +294,7 @@ nav {
   border: 1px solid black;
 }
 
-/* line 236, styles.scss */
+/* line 247, styles.scss */
 .sandwich-display {
   width: 600px;
   height: 550px;
@@ -291,53 +303,53 @@ nav {
 }
 
 @media screen and (max-width: 550px) {
-  /* line 244, styles.scss */
+  /* line 255, styles.scss */
   .navbar {
     height: 90px;
   }
 
-  /* line 247, styles.scss */
+  /* line 258, styles.scss */
   .navbar-nav {
     width: 100%;
   }
-  /* line 249, styles.scss */
+  /* line 260, styles.scss */
   .navbar-nav li {
     width: 25%;
     top: -5px;
   }
-  /* line 253, styles.scss */
+  /* line 264, styles.scss */
   .navbar-nav #logo {
     display: none;
   }
-  /* line 256, styles.scss */
+  /* line 267, styles.scss */
   .navbar-nav .logo {
     display: block;
   }
 
-  /* line 260, styles.scss */
+  /* line 271, styles.scss */
   .content {
     padding-top: 90px;
   }
 }
 @media screen and (min-width: 550px) {
-  /* line 265, styles.scss */
+  /* line 276, styles.scss */
   .logo {
     display: none;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 270, styles.scss */
+  /* line 281, styles.scss */
   .sandwich-display {
     width: 100%;
   }
 
-  /* line 273, styles.scss */
+  /* line 284, styles.scss */
   .sandwich-details {
     width: 100% !important;
   }
 }
 @media screen and (max-width: 880px) {
-  /* line 278, styles.scss */
+  /* line 289, styles.scss */
   .sandwich-details {
     width: 600px;
   }

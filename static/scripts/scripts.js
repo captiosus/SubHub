@@ -42,5 +42,10 @@ $(document).ready(function(){
     $(".next").click(function() {
       current++;
     });
-    $(".choice").clicl(function() {
+    $(".choice").click(function() {
+      $(".choice").each(function() {
+        $(this).removeClass("selected");
+      });
+      $(this).addClass("selected");
+    });
 });
