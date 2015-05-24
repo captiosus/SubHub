@@ -3,6 +3,7 @@ $primary-color: red;
 $nav-text: #FF8002;
 $primary-font: Helvetica, sans-serif;
 $background-color: white;
+$select-color: #FF8002;
 
 .material-shadow {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -177,16 +178,67 @@ nav {
   cursor: pointer;
 }
 .sandwich-details {
-  border: 1px solid black;
+  @extend .material-shadow;
   width: 200px;
   height: 550px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  p {
+    padding-top: 20px;
+    font-weight: bold;
+    border: 0;
+    cursor: default;
+    padding-left: 15px;
+    text-decoration: underline;
+  }
+  ul {
+    padding-top: 20px;
+    padding-left: 0;
+    list-style: none;
+    li {
+      border-top: 1px solid black;
+      height: 50px;
+      p {
+        text-decoration: none;
+        cursor: pointer;
+        padding-top: 0;
+        font-weight: normal;
+        padding-left: 25px;
+        line-height: 50px;
+        margin-bottom: 0;
+      }
+    }
+    li:last-child {
+      border-bottom: 1px solid black;
+    }
+    li:hover {
+      background-color: $select-color;
+      color: white;
+      border-top: 1px solid $select-color;
+    }
+    li:hover + li {
+      border-top: 0;
+    }
+  }
+  .next {
+    height: 40px;
+    line-height: 40px;
+    width: 80px;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    border: 1px solid black;
+  }
 }
 .sandwich-display {
-  border: 1px solid black;
+  @extend .material-shadow;
   width: 600px;
   height: 550px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 550px) {
   .navbar {
@@ -212,6 +264,19 @@ nav {
 @media screen and (min-width: 550px) {
   .logo {
     display: none;
+  }
+}
+@media screen and (max-width: 660px) {
+  .sandwich-display {
+    width: 100%;
+  }
+  .sandwich-details {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 880px) {
+  .sandwich-details {
+    width: 600px;
   }
 }
 

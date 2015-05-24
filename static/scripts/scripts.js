@@ -38,4 +38,9 @@ $(document).ready(function(){
         expanded = true;
       }
     });
+    var current = 0;
+    $(".next").click(function() {
+      current++;
+    });
+    $(".choice").clicl(function() {
 });
