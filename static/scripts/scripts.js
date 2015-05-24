@@ -28,6 +28,7 @@ $(document).ready(function(){
             select = true;
             selection = $(this).attr("id");
             allSelected.push(selection);
+            console.log(selection);
             if(current == 2) { 
               selection++;
             }
@@ -158,7 +159,7 @@ $(document).ready(function(){
       }
     });
     $(".finish").click(function() {
-      var ingredients;
+      var ingredients = "";
       var name = $("#create-name").val();
       var user = $("#create-input").val();
       for (var i = 0; i < allSelected.length;i++) {
@@ -173,9 +174,6 @@ $(document).ready(function(){
       else {
         window.location.replace("../../templates/Success/index.html?ingredients=" + ingredients + "&name=" + name + "&user=" + user);
       }
-      console.log(ingredients);
-      console.log(name);
-      console.log(user);
     });
 });
 function next(current) {
