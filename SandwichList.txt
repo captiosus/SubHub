@@ -1,3 +1,11 @@
-Monster Burger::thing.foo::burger::wheat,bacon,chicken,ham,salami,turkey,american,swiss,mozzarella,lettuce,tomato,avocado,pickles,chipotle,mayo,ketchup::0::0
-Bacon Avocado Chipotle::Ferry's::bagel::plain,bacon,avocado,chipotle::0::0
-The ABC::niceme.me::classic::Rye,Bacon,Avocado,Chipotle::0::0
+Cheeseburger::Erik::burger::Sesame,Patty,American,Lettuce,Tomato::0::0
+Deli ::Kevin::hero::Italian,Ham,American,Lettuce,Tomato,Mayo::0::0
+Turkey Bagel::Felicity::bagel::Plain,Turkey,American,Lettuce,Tomato,Avocado::0::0
+Lunch::Sarah::classic::White,Salami,American,Lettuce,Mayo::0::0
+Standard Burger::Matt::burger::Sesame,Patty,Swiss,Lettuce,Tomato,Ketchup::0::0
+Avocado Burger::Burak::burger::Sesame,Patty,American,Lettuce,Tomato,Avocado::0::0
+B.A.T.::Jonathan::burger::Sesame,Bacon,American,Lettuce,Chipotle::0::0
+The Mega-ultra Sandwich of awesomeness.::Shy::bagel::Plain,Bacon,American,Swiss,Avocado::0::0
+Meat::Oliver::hero::Italian,Bacon,Patty,Ham,Turkey,American,Swiss::0::0
+Bacon Avocado Chipotle On a Rohhlllllllllll ::Kenneth::hero::Italian,Bacon,Avocado,Chipotle::0::0
+Whopper::McDonald's::burger::Sesame,Bacon,Patty,American,Lettuce,Tomato::0::0

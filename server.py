@@ -144,7 +144,28 @@ def gallery():
     for x in range(0,len(Sandwiches)):
         s +='        <div class="col-md-4 col-sm-6 col-xs-12">\n'
         s +='          <div class="sandwich">\n'
-        s +='            <div class="sandwich-picture"></div>\n'
+        s +='            <div class="sandwich-picture">'
+        s +='            <div class="ing-contain">'
+        if Sandwiches[x].ingredients[0]=="White":
+            s+='<div id="classic-white-small"></div>'
+        elif Sandwiches[x].ingredients[0]=="Plain":
+            s+='<div id="bagel-top-small"></div>'
+        elif Sandwiches[x].ingredients[0]=="Italian":
+            s+='<div id="hero-italian-small"></div>'
+        elif Sandwiches[x].ingredients[0]=="Sesame":
+            s+='<div id="burger-sesame-small"></div>'
+        for y in range(1,len(Sandwiches[x].ingredients)):
+            s+='<div id="' + Sandwiches[x].ingredients[y].lower() + '-display-small"></div>'
+        if Sandwiches[x].ingredients[0]=="White":
+            s+='<div id="classic-white-small"></div>'
+        elif Sandwiches[x].ingredients[0]=="Plain":
+            s+='<div id="bagel-bot-small"></div>'
+        elif Sandwiches[x].ingredients[0]=="Italian":
+            s+='<div id="hero-italian-bot-small"></div>'
+        elif Sandwiches[x].ingredients[0]=="Sesame":
+            s+='<div id="burger-bot-small"></div>'
+        s +='</div>\n'
+        s +='</div>\n'
         s +='            <h2 class="sandwich-name">' + Sandwiches[x].name + '</h2>\n'
         s +='            <div class="sandwich-receipt">\n'
         s +='              <h2 class="receipt-title">SubHub</h2>\n'
